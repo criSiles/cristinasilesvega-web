@@ -1,5 +1,5 @@
 <template>
-  <!-- Socks image -->
+  <!-- Socks -->
   <div class="flex flex-row flex-wrap">
     <div class="w-[100%] md:w-[50%]">
       <img class="w-[70%] m-10 p-4 mist-border-2" v-bind:src="image" />
@@ -86,7 +86,7 @@ function updateVariant(index) {
 }
 </script>
 
-<style>
+<style scoped>
 h1 {
   font-size: 50px;
 }

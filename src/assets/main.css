@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
 
-/* @tailwind utilities;
-/* @tailwind base; */
-/* @tailwind components; */
-
-@import 'tailwindcss/base';
+/* tailwindcss/base is breaking my project CSS */
+/* @import 'tailwindcss/base'; */
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
 
 /* TODO: Organize CSS*/
 body {
@@ -17,6 +13,7 @@ body {
 body * {
   font-family: "Poppins";
 }
+
 
 @layer utilities {
 

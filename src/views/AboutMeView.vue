@@ -54,7 +54,9 @@
       </article>
 
       <article class="cv">
-        <a href="/CSV_CV.pdf" download>Download my CV!</a>
+        <button class="css-button-shadow-border-sliding--sand">
+          <a href="/CSV_CV.pdf" download>Download my CV!</a>
+        </button>
       </article>
     </main>
 
@@ -148,6 +150,43 @@ export default {
   text-decoration: none;
   font-weight: 500;
 }
+.css-button-shadow-border-sliding--sand {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #adb5bd;
+ z-index: 1;
+}
+.css-button-shadow-border-sliding--sand:hover:after {
+  width: 100%;
+  left: 0;
+}
+.css-button-shadow-border-sliding--sand:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+  background-color: #ced4da;
+  right: 0;
+}
+.css-button-shadow-border-sliding--sand:active {
+  top: 2px;
+}
 @media screen and (max-width: 980px) {
   .aboutme {
     align-items: center;
@@ -185,5 +224,6 @@ export default {
   .featured h4 {
     margin-left: 0rem;
   }
+
 }
 </style>

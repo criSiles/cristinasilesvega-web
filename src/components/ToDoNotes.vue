@@ -31,10 +31,10 @@ export default {
     },
   },
   setup(props) {
-    const taskVar = ref(null);
-    taskVar.value = props.taskVar;
+    const taskVar= ref(null);
+    taskVar.value = props.task;
     const message = ref(null);
-    message.value = props.taskVar.notes;
+    message.value = props.task.notes;
     console.log("This is the message value:", message.value);
     const saveInput = () => {
       useToDoStore().addNotes(taskVar.value.id, message.value);

@@ -3,10 +3,20 @@ import vue from '@vitejs/plugin-vue'
 import { fileURLToPath } from 'url'
 import { loadEnv } from 'vite'
 
+// I'm not sure if this is necessary
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
     plugins: [vue()],
+    // I'm not sure if this is necessary
+    css: {
+      postcss: {
+        plugins: [tailwindcss, autoprefixer]
+      }
+    },
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -21,18 +31,6 @@ export default defineConfig(({ mode }) => {
       'process.env.MESSAGING_SENDER_ID': JSON.stringify(env.MESSAGING_SENDER_ID),
       'process.env.APP_ID': JSON.stringify(env.APP_ID),
       'process.env.MEASUREMENT_ID': JSON.stringify(env.MEASUREMENT_ID)
-      // If you want to exposes all env variables, which is not recommended
-      // 'process.env': env
     }
   }
 })
-// export default defineConfig({
-//   plugins: [
-//     vue(),
-//   ],
-//   resolve: {
-//     alias: {
-//       '@': fileURLToPath(new URL('./src', import.meta.url))
-//     }
-//   }
-// })

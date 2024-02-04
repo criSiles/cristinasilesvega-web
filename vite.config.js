@@ -22,6 +22,10 @@ export default defineConfig(({ mode }) => {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
+    server: {
+      port: 3000,
+      host: '0.0.0.0'
+    },
     define: {
       'process.env.API_KEY': JSON.stringify(env.API_KEY),
       'process.env.AUTH_DOMAIN': JSON.stringify(env.AUTH_DOMAIN),

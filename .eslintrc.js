@@ -1,10 +1,13 @@
-/* eslint-env node */
+// .eslintrc.js is a configuration file for ESLint. 
+// ESLint is a tool to detect errors and potential problems in JavaScript code.
+// It can be used to set additional rules, plugins, and parser options.
+// It is a JavaScript file that exports an object with configuration options.
+
 require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
   env: {
     node: true,
-    jest: true
   },
   root: true,
   extends: [

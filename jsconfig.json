@@ -1,18 +1,32 @@
+// jsconfig.json is a configuration file that is used to specify the root files and the compiler options required to compile the project.
+// for ts files, we use tsconfig.json
 {
   "compilerOptions": {
+    // target is the version of ECMAScript that the code should be compiled to
     "target": "es5",
+    // module is the module system that the code should be compiled to
+    // esnext is the latest version of ECMAScript
     "module": "esnext",
+    // moduleResolution is the strategy for resolving module names
+    // node is the Node.js style resolution
     "moduleResolution": "node",
+    // baseUrl is the base directory to resolve non-relative module names
     "baseUrl": ".",
+    // paths is a series of entries which re-map the module names
     "paths": {
       "@/*": [
         "src/*"
       ]
     },
+    // lib is a list of library files to be included in the compilation
     "lib": [
+      // esnext is the latest version of ECMAScript
       "esnext",
+      // dom is the DOM and related APIs
       "dom",
+      // dom.iterable is the DOM and related APIs with iterable
       "dom.iterable",
+      // scripthost is the host for the JavaScript engine
       "scripthost"
     ]
   }

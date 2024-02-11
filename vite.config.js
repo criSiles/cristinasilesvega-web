@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { fileURLToPath } from 'url'
+import path from 'path'
 import { loadEnv } from 'vite'
 
 // I'm not sure if this is necessary
@@ -18,9 +18,7 @@ export default defineConfig(({ mode }) => {
       }
     },
     resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url))
-      }
+      alias: { find: '@', replacement: path.resolve(__dirname, 'src') }
     },
     server: {
       port: 3000,

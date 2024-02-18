@@ -2,33 +2,33 @@
   <div class="contact">
     <form @submit="handleSubmit($event)">
       <label>Email:</label>
-      <input type="email" required v-model.trim="email" placeholder="phoebe@gmail.com" />
+      <input type="email" id="email" required v-model.trim="email" placeholder="phoebe@gmail.com" />
       <div v-if="emailError">Please enter a valid email</div>
       <label>Name:</label>
-      <input type="text" required v-model.trim="name" placeholder="Phoebe Buffay" />
+      <input type="text" id="name" required v-model.trim="name" placeholder="Phoebe Buffay" />
       <div v-if="nameError">Please enter your name</div>
 
       <label>Mobile:</label>
-      <input type="tel" required v-model.trim="mobile" placeholder="600600600" />
+      <input type="tel" id="mobile" required v-model.trim="mobile" placeholder="600600600" />
       <div v-if="mobileError">The mobile has to be 9 numbers</div>
 
       <label> Role: </label>
-      <select required v-model="role">
-        <option type="role" value="developer">Web Developer</option>
-        <option type="role" value="recruiter">Recruiter</option>
-        <option type="role" value="student">Web Student</option>
-        <option type="role" value="other">Other</option>
+      <select required id="role" v-model="role">
+        <option type="role" id="developer" value="developer">Web Developer</option>
+        <option type="role" id="recruiter" value="recruiter">Recruiter</option>
+        <option type="role" id="student" value="student">Web Student</option>
+        <option type="role" id="other" value="other">Other</option>
       </select>
       <input v-if="role === 'other'" v-model="customRole" placeholder="Write your role" />
 
       <div class="accept">
         <div class="terms">
-          <input type="checkbox" required v-model="terms" />
+          <input id="termsAndConditionsCheckbox" type="checkbox" required v-model="terms" />
           <label>Accept terms and conditions</label>
         </div>
 
         <div class="submit">
-          <button>Send</button>
+          <button id="submit">Send</button>
         </div>
       </div>
     </form>

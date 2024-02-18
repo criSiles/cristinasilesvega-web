@@ -2,19 +2,19 @@
 
 exports[`renders correctly > renders the form 1`] = `
 "<div data-v-732673bb="" class="contact">
-  <form data-v-732673bb=""><label data-v-732673bb="">Email:</label><input data-v-732673bb="" type="email" required="" placeholder="phoebe@gmail.com">
-    <!--v-if--><label data-v-732673bb="">Name:</label><input data-v-732673bb="" type="text" required="" placeholder="Phoebe Buffay">
-    <!--v-if--><label data-v-732673bb="">Mobile:</label><input data-v-732673bb="" type="tel" required="" placeholder="600600600">
-    <!--v-if--><label data-v-732673bb=""> Role: </label><select data-v-732673bb="" required="">
-      <option data-v-732673bb="" type="role" value="developer">Web Developer</option>
-      <option data-v-732673bb="" type="role" value="recruiter">Recruiter</option>
-      <option data-v-732673bb="" type="role" value="student">Web Student</option>
-      <option data-v-732673bb="" type="role" value="other">Other</option>
+  <form data-v-732673bb=""><label data-v-732673bb="">Email:</label><input data-v-732673bb="" type="email" id="email" required="" placeholder="phoebe@gmail.com">
+    <!--v-if--><label data-v-732673bb="">Name:</label><input data-v-732673bb="" type="text" id="name" required="" placeholder="Phoebe Buffay">
+    <!--v-if--><label data-v-732673bb="">Mobile:</label><input data-v-732673bb="" type="tel" id="mobile" required="" placeholder="600600600">
+    <!--v-if--><label data-v-732673bb=""> Role: </label><select data-v-732673bb="" required="" id="role">
+      <option data-v-732673bb="" type="role" id="developer" value="developer">Web Developer</option>
+      <option data-v-732673bb="" type="role" id="recruiter" value="recruiter">Recruiter</option>
+      <option data-v-732673bb="" type="role" id="student" value="student">Web Student</option>
+      <option data-v-732673bb="" type="role" id="other" value="other">Other</option>
     </select>
     <!--v-if-->
     <div data-v-732673bb="" class="accept">
-      <div data-v-732673bb="" class="terms"><input data-v-732673bb="" type="checkbox" required=""><label data-v-732673bb="">Accept terms and conditions</label></div>
-      <div data-v-732673bb="" class="submit"><button data-v-732673bb="">Send</button></div>
+      <div data-v-732673bb="" class="terms"><input data-v-732673bb="" id="termsAndConditionsCheckbox" type="checkbox" required=""><label data-v-732673bb="">Accept terms and conditions</label></div>
+      <div data-v-732673bb="" class="submit"><button data-v-732673bb="" id="submit">Send</button></div>
     </div>
   </form>
 </div>"

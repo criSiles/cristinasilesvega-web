@@ -1,8 +1,8 @@
 <template>
   <header>
     <div class="title">
-      <img alt="Orange logo" src="../assets/orange.webp" />
-      <h1>Silly Tasks</h1>
+      <img alt="Orange logo" src="../../assets/orange.webp" />
+      <h1>To-Do(range)</h1>
     </div>
       <router-link :to="{ name: 'Home' }">
         <i class="material-icons"> home </i>
@@ -38,7 +38,8 @@ header img {
 header h1 {
   margin: 0;
   font-size: 2rem;
-  padding-top: 1rem;
+  font-weight: 600;
+  padding-top: 0.6rem;
   color: #777;
 }
 

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import ToDoNotesView from '../views/ToDoNotesView.vue'
-import ToDoView from '../views/ToDoView.vue'
+import ToDoNotesView from '../views/ToDo/ToDoNotesView.vue'
+import ToDoView from '../views/ToDo/ToDoView.vue'
 import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import AboutMeView from '../views/AboutMeView.vue'

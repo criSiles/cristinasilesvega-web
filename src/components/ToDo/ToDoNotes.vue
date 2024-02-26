@@ -20,8 +20,8 @@
 
 <script>
 import { ref, onMounted } from "vue";
-import { useToDoStore } from "../stores/ToDoStore";
-import ToDoHeader from "@/components/ToDoHeader.vue";
+import { useToDoStore } from "@/stores/ToDoStore";
+import ToDoHeader from "@/components/ToDo/ToDoHeader.vue";
 
 export default {
   props: {

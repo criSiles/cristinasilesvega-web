@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import PaginationItem from "./PaginationItem.vue";
+import PaginationItem from "../PaginationItem.vue";
 import ToDoDetails from "./ToDoDetails.vue";
 import { ref, computed } from "vue";
 

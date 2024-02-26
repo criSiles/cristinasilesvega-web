@@ -54,7 +54,7 @@
       </article>
 
       <article class="cv">
-        <a href="/CSV_2024.pdf" download>Download my CV!</a>
+        <a href="/CSV_CV_2024.pdf" download>Download my CV!</a>
       </article>
     </main>
 

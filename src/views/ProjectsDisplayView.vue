@@ -8,11 +8,9 @@
         <h2>Projects</h2>
         <div class="card-container">
           <article class="card">
-            <h3>To Do</h3>
+            <h3>To-Do-range</h3>
             <p>
-              This is a website where you can find a To Do list. In this part
-              you could add a new to do, mark it as fav, delete it and add
-              notes.
+              Explore my website for essential To-Dos. Add, favorite, delete tasks, and write notes easily.
             </p>
             <nav>
               <router-link class="link" :to="{ name: 'ToDo' }"
@@ -21,10 +19,9 @@
             </nav>
           </article>
           <article class="card">
-            <h3>Second Hand Shop</h3>
+            <h3>Express Yourself</h3>
             <p>
-              This is a second hand shop website. You can see all the products,
-              make a search for a specific product and post a product to sell.
+              Discover my lovely sportswear shop, offering cute outfits & accessories for active lifestyles.
             </p>
             <nav>
               <router-link class="link" :to="{ name: 'ProjectsWip' }"
@@ -33,10 +30,9 @@
             </nav>
           </article>
           <article class="card">
-            <h3>Flitter</h3>
+            <h3>Silly Games</h3>
             <p>
-              This is a social media website where you can express yourself and
-              see what other people are thinking or doing.
+              Enjoy quick laughs and entertainment on my website with amusing short games to pass the time.
             </p>
             <nav>
               <router-link class="link" :to="{ name: 'ProjectsWip' }"

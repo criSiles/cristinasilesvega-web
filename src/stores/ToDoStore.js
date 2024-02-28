@@ -86,7 +86,7 @@ export const useToDoStore = defineStore("todoStore", {
         console.log("You cannot add an empty To Do");
         return;
       } else {
-        this.tasks.push(task);
+        this.tasks.unshift(task);
       }
 
       // Update the local storage

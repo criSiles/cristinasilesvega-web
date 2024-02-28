@@ -1,12 +1,14 @@
 <template>
   <header>
-    <div class="title">
-      <img alt="Orange logo" src="../../assets/orange.webp" />
-      <h1>To-Do(range)</h1>
-    </div>
-      <router-link :to="{ name: 'Home' }">
-        <i class="material-icons"> home </i>
-      </router-link>
+    <router-link :to="{ name: 'ToDo' }">
+      <div class="title">
+        <img alt="Orange logo" src="../../assets/orange.webp" />
+        <h1>To-Do(range)</h1>
+      </div>
+    </router-link>
+    <router-link :to="{ name: 'Home' }">
+      <i class="material-icons"> home </i>
+    </router-link>
   </header>
 </template>
 
@@ -51,4 +53,7 @@ i {
   margin-right: 0.5rem;
 }
 
+a:link {
+  text-decoration: none;
+}
 </style>

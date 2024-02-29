@@ -8,7 +8,7 @@
         <h2>Projects</h2>
         <div class="card-container">
           <article class="card">
-            <h3>To-Do(range)</h3>
+            <h3>To Do</h3>
             <p>
               Explore my website for essential To-Dos. Add, favorite, delete tasks, and write notes easily.
             </p>

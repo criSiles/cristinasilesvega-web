@@ -1,16 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.vue", "index.html"],
+export default {
+  content: [
+    './src/components/eshop/*.{vue,js,ts,jsx,tsx}',
+    './src/views/eshop/*.{vue,js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
-      boxShadow: {
-        "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-      },
-      dropShadow: {
-        "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-      },
-    },
+      gridTemplateRows: { '[auto,auto,1fr]': 'auto auto 1fr' },
+      colors: {},
+      screens: {}
+    }
   },
-  plugins: [],
-};
+  variants: {
+    extend: { translate: ['group-hover'] }
+  },
+  plugins: [require('@tailwindcss/aspect-ratio'), require('flowbite/plugin')]
+}
 
+//('@tailwindcss/gradient'),

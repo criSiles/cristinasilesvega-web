@@ -24,9 +24,10 @@ export default {
     const route = useRoute();
     const id = parseInt(route.params.id);
 
+    //If the tasks have not been fetched, the task computed property would not be able to find the task and would return null
     todoStore.fetchTasks();
 
-    // Get task from store
+    // Get task from store with the id I got from the route
     const task = computed(() => {
       if (todoStore.loading === false) {
         return todoStore.getTaskById(id);

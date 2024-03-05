@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import deafultData from "../../data/db.json";
+import deafultData from "../../data/tasksDb.json";
 
 // const urlDB = "http://localhost:5999/tasks";
 

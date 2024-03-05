@@ -1,59 +1,33 @@
 <template>
-  <body>
-    <header class="header-container">
-      <router-link :to="{ name: 'Home' }">
-        <div class="title">
-          <img
-            class="element image"
-            src="../assets/circleCris.png"
-            alt="Cris"
-          />
-            <a class="element name">Cristina Siles Vega</a>
-  
-            
-        </div>
-      </router-link>
-      <nav>
-        <div class="navbar">
-          <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-            <div class="menu-items overlay">
-              <li><a href="/">Home</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/aboutme">About</a></li>
-            </div>
+  <header class="header-container">
+    <router-link :to="{ name: 'Home' }">
+      <div class="title">
+        <img class="element image" src="../assets/circleCris.png" alt="Cris" />
+        <a class="element name">Cristina Siles Vega</a>
+      </div>
+    </router-link>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="menu-items overlay">
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/aboutme">About</a></li>
           </div>
         </div>
-      </nav>
-    </header>
-  </body>
+      </div>
+    </nav>
+  </header>
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem;
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -61,7 +35,13 @@ body {
   text-align: center;
   background-color: #fff;
   width: 100%;
-  /* flex-direction: row-reverse; */
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
 }
 
 .element {
@@ -75,54 +55,27 @@ body {
   margin: 0.5rem 0.5rem;
 }
 
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
 .name {
   font-size: 1.1rem;
   font-weight: 500;
   justify-content: center;
   color: #0e2431;
-  animation: fadeIn 2s ease-in-out;
 }
 
 a:link {
   text-decoration: none;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.container {
-  width: 90%;
-  margin: auto;
   animation: slideInFromLeft 2s ease-in-out;
-}
-.menu-items {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  text-align: center;
-  margin-left: -8.6rem;
-  margin-top: -0.6rem;
-  display: flex;
-  justify-content: center;
 }
 
 .navbar {
   width: 2rem;
   height: 2rem;
   margin: 0.5rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
 }
 
 .navbar .nav-container li {
@@ -142,14 +95,37 @@ a:link {
   display: none;
 }
 
+.menu-items {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  margin-left: -8.6rem;
+  margin-top: -0.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .navbar .nav-container a:hover {
+    font-weight: bolder;
+  }
+
   .nav-container {
     display: block;
     position: relative;
     width: 100%;
-  }
-  .navbar .nav-container a:hover {
-    font-weight: bolder;
   }
   .nav-container .checkbox {
     cursor: pointer;
@@ -215,23 +191,23 @@ a:link {
     font-weight: 500;
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+  .nav-container input[type='checkbox']:checked ~ .menu-items {
     transform: translateX(0);
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  .nav-container input[type='checkbox']:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  .nav-container input[type='checkbox']:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  .nav-container input[type='checkbox']:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .logo {
+  .nav-container input[type='checkbox']:checked ~ .logo {
     display: none;
   }
   .overlay {

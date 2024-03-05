@@ -5,6 +5,7 @@
 
 <script>
 import { defineComponent } from "vue";
+import '../src/assets/main.css'
 
 export default defineComponent({
   name: "App",

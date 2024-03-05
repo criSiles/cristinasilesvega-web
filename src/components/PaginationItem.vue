@@ -99,7 +99,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
 /* Pagination */
 .pagination {
   list-style-type: none;

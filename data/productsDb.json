@@ -1,0 +1,425 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Gym Outfit",
+      "href": "#",
+      "price": "50€",
+      "colors": [
+        {
+          "color": "Black",
+          "imageSrc": "blackFrontWoman.jpg",
+          "imageAlt": "Black tank top and cycling leggins for gym",
+          "sizes": [
+            {
+              "size": "XS",
+              "quantity": 2
+            },
+            {
+              "size": "S",
+              "quantity": 3
+            },
+            {
+              "size": "M",
+              "quantity": 5
+            },
+            {
+              "size": "L",
+              "quantity": 0
+            },
+            {
+              "size": "XL",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "palevioletred",
+          "imageSrc": "pinkFrontWoman.jpg",
+          "imageAlt": "Pink tank top and cycling leggins for gym",
+          "sizes": [
+            {
+              "size": "XS",
+              "quantity": 2
+            },
+            {
+              "size": "S",
+              "quantity": 3
+            },
+            {
+              "size": "M",
+              "quantity": 5
+            },
+            {
+              "size": "L",
+              "quantity": 3
+            },
+            {
+              "size": "2XL",
+              "quantity": 2
+            },
+            {
+              "size": "3XL",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "sienna",
+          "imageSrc": "brownFrontWoman.jpg",
+          "imageAlt": "Brown tank top and cycling leggins for gym",
+          "sizes": [
+            {
+              "size": "XS",
+              "quantity": 0
+            },
+            {
+              "size": "S",
+              "quantity": 0
+            },
+            {
+              "size": "M",
+              "quantity": 0
+            },
+            {
+              "size": "L",
+              "quantity": 0
+            },
+            {
+              "size": "XL",
+              "quantity": 0
+            }
+          ]
+        },
+        {
+          "color": "steelblue",
+          "imageSrc": "blueFrontWoman.jpg",
+          "imageAlt": "Blue tank top and cycling leggins for gym",
+          "sizes": [
+            {
+              "size": "XS",
+              "quantity": 2
+            },
+            {
+              "size": "S",
+              "quantity": 3
+            },
+            {
+              "size": "M",
+              "quantity": 5
+            },
+            {
+              "size": "L",
+              "quantity": 5
+            },
+            {
+              "size": "XL",
+              "quantity": 5
+            },
+            {
+              "size": "2XL",
+              "quantity": 5
+            },
+            {
+              "size": "3XL",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "color": "darkgreen",
+          "imageSrc": "greenFrontWoman.jpg",
+          "imageAlt": "Green tank top and cycling leggins for gym",
+          "quantity": 8,
+          "sizes": [
+            {
+              "size": "XS",
+              "quantity": 2
+            },
+            {
+              "size": "S",
+              "quantity": 3
+            },
+            {
+              "size": "M",
+              "quantity": 5
+            },
+            {
+              "size": "L",
+              "quantity": 5
+            },
+            {
+              "size": "XL",
+              "quantity": 5
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Christina",
+          "review": "The black is super flattery. I love it!",
+          "rating": 4,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Bea",
+          "review": "The pink color is super cute, but the fabric is not as soft as I expected.",
+          "rating": 3,
+          "recommend": "No"
+        },
+        {
+          "name": "Diana",
+          "review": "I bought the brown one. You'll need to hurry to get it because it's almost always out of stock.",
+          "rating": 5,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Helen",
+          "review": "The green one has a brighter color than in the photo, but it's still good.",
+          "rating": 4,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Layla",
+          "review": "I love the brown, goes perfectly well with my skin tone.",
+          "rating": 4,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Naomi",
+          "review": "Blue is my color <3",
+          "rating": 4,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Olivia",
+          "review": "The size is a little bit bigger than the size guide.",
+          "rating": 2,
+          "recommend": "No"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Reusable cup",
+      "href": "#",
+      "price": "18€",
+      "colors": [
+        {
+          "color": "black",
+          "imageSrc": "black_cup.jpg",
+          "imageAlt": "Reusable cup in black color.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "darkorange",
+          "imageSrc": "orange_cup.jpg",
+          "imageAlt": "Reusable cup in orange color.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "ghostwhite",
+          "imageSrc": "white_cup.jpg",
+          "imageAlt": "Reusable cup in white color.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "darkseagreen",
+          "imageSrc": "green_cup.jpg",
+          "imageAlt": "Reusable cup in green color.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Anna",
+          "review": "The white was more of a grey color, but I still like it",
+          "rating": 4,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Martha",
+          "review": "I tought that the cup also was for hot drinks, but it's not.",
+          "rating": 2,
+          "recommend": "No"
+        },
+        {
+          "name": "Gemma",
+          "review": "I bought the orange one and I love that is easy to clean.",
+          "rating": 5,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Sheila",
+          "review": "The black one is super elegant to bring to work.",
+          "rating": 5,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Judith",
+          "review": "I bought the green, it's ok.",
+          "rating": 4,
+          "recommend": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pilates mat",
+      "href": "#",
+      "price": "25€",
+      "colors": [
+        {
+          "color": "Blue",
+          "imageSrc": "blue_mat_hands.jpg",
+          "imageAlt": "Comfy blue pilates mat.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 10
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Mawa",
+          "review": "I love the softness of the mat!",
+          "rating": 4,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Lola",
+          "review": "It was a gift for my sister and she loved it.",
+          "rating": 5,
+          "recommend": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Yoga mat",
+      "href": "#",
+      "price": "28€",
+      "colors": [
+        {
+          "color": "Black",
+          "imageSrc": "black_mat_hands.jpg",
+          "imageAlt": "Comfy black yoga mat.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 10
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Monica",
+          "review": "I love it!",
+          "rating": 5,
+          "recommend": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Scrunchy",
+      "href": "#",
+      "price": "6€",
+      "colors": [
+        {
+          "color": "navy",
+          "imageSrc": "dark_blue_scrunchy.jpg",
+          "imageAlt": "Cute bright dark blue scrunchy.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "silver",
+          "imageSrc": "silver_scrunchy.jpg",
+          "imageAlt": "Cute bright silver scrunchy.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "salmon",
+          "imageSrc": "salmon_scrunchy.jpg",
+          "imageAlt": "Cute bright salmon scrunchy.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "pink",
+          "imageSrc": "pink_scrunchy.jpg",
+          "imageAlt": "Cute bright pink scrunchy.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "color": "darkred",
+          "imageSrc": "dark_red_scrunchy.jpg",
+          "imageAlt": "Cute bright dark red scrunchy.",
+          "sizes": [
+            {
+              "size": "unique",
+              "quantity": 2
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Alice",
+          "review": "I love the colors, I bought them all!",
+          "rating": 4,
+          "recommend": "Yes"
+        },
+        {
+          "name": "Yasmine",
+          "review": "I like the fabric but the colors are not as bright as in the picture.",
+          "rating": 3,
+          "recommend": "Yes"
+        }
+      ]
+    }
+  ]
+}

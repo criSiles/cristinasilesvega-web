@@ -28,7 +28,6 @@ export default {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   margin: 0;
-  font-family: "Poppins";
   background: linear-gradient(to bottom, #f2f2f2, white);
 }
 

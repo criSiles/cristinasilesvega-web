@@ -7,7 +7,7 @@
 
 <script>
 import { ref } from "vue";
-import { useToDoStore } from "../stores/ToDoStore";
+import { useToDoStore } from "@/stores/ToDoStore";
 
 // Composition API
 export default {

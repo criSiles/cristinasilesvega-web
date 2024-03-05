@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { useToDoStore } from "../stores/ToDoStore";
+import { useToDoStore } from "@/stores/ToDoStore";
 
 export default {
   props: ["task"],

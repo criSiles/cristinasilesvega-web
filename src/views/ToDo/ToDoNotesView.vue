@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import ToDoNotes from "@/components/ToDoNotes.vue";
-import { useToDoStore } from "../stores/ToDoStore";
+import ToDoNotes from "@/components/ToDo/ToDoNotes.vue";
+import { useToDoStore } from "@/stores/ToDoStore";
 import { useRoute } from "vue-router";
 import { computed } from "vue";
 

@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import ToDoHeader from "@/components/ToDoHeader.vue";
-import ToDoList from "@/components/ToDoList.vue";
-import ToDoForm from "@/components/ToDoForm.vue";
-import { useToDoStore } from "../stores/ToDoStore";
+import ToDoHeader from "@/components/ToDo/ToDoHeader.vue";
+import ToDoList from "@/components/ToDo/ToDoList.vue";
+import ToDoForm from "@/components/ToDo/ToDoForm.vue";
+import { useToDoStore } from "@/stores/ToDoStore";
 import { storeToRefs } from 'pinia';
 
 export default {

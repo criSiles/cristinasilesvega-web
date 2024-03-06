@@ -1,0 +1,33 @@
+<template>
+  <footer class="to-do-footer">
+    <router-link :to="{ name: 'Home' }">
+      <i class="material-icons"> home </i>
+      <p class="footer-title">Go back to cristinasilesvega's web</p>
+    </router-link>
+  </footer>
+</template>
+
+<style scoped>
+.to-do-footer {
+  width: 100%;
+  background: #078080;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin-top: auto;
+}
+.material-icons {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #abd1c6;
+}
+
+.footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #ffffff;
+  margin-top: -0.3rem;
+  margin-bottom: 0.3rem;
+}
+</style>

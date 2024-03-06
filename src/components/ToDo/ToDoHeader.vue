@@ -1,59 +1,49 @@
 <template>
-  <header>
+  <header class="to-do-header">
     <router-link :to="{ name: 'ToDo' }">
-      <div class="title">
-        <img alt="Orange logo" src="../../assets/orange.webp" />
+      <div class="header-title">
+        <img class="header-img" alt="Orange logo" src="../../assets/orange.webp" />
         <h1>To-Do</h1>
       </div>
-    </router-link>
-    <router-link :to="{ name: 'Home' }">
-      <i class="material-icons"> home </i>
     </router-link>
   </header>
 </template>
 
 <style scoped>
 /* header */
-header {
-  position: fixed;
-  top: 0;
+.to-do-header {
   width: 100%;
-  background: #e7e7e7;
+  background: #abd1c6;
   padding-bottom: 0.5rem;
-  /* for the elements */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-}
-.title {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  text-align: center;
+  /* background-image: url('../../assets/orange.webp'); 
+  background-repeat: repeat; 
+  background-size: 70px 70px; */
 
-header img {
-  max-width: 3rem;
-  margin-left: 0.5rem;
 }
-
-header h1 {
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
   padding-top: 0.6rem;
-  color: #777;
+  color: #ffffff;
+  transition: transform 0.4s ease-in-out;
 }
 
-i {
-  margin-top: 0.6rem;
-  font-size: 3.1rem;
-  cursor: pointer;
-  color: #777;
-  margin-right: 0.5rem;
+.header-img {
+  max-width: 3rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.4s ease-in-out; 
 }
 
-a:link {
-  text-decoration: none;
+.header-img:hover {
+  transform: scale(1) translate(5px, 5px) rotate(360deg); 
 }
 </style>

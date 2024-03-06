@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import PaginationItem from "../PaginationItem.vue";
+import PaginationItem from "./PaginationItem.vue";
 import ToDoDetails from "./ToDoDetails.vue";
 import { ref, computed } from "vue";
 
@@ -150,16 +150,14 @@ export default {
 
 <style>
 .task-list {
-  max-width: 40rem;
   margin: 1.25rem auto;
+  max-width: 40rem;
 }
 
 .task {
+  margin: 1.25rem 2vw 0;
   padding: 0.375rem 1.25rem;
   background: white;
-  margin-top: 1.25rem;
-  margin-left: 2vw;
-  margin-right: 2vw;
   border-radius: 0.25rem;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -175,9 +173,9 @@ export default {
 }
 
 .task .icons {
-  text-align: right;
   display: flex;
-  flex-direction: row;
+  text-align: right;
+
 }
 
 .task i {
@@ -195,38 +193,37 @@ export default {
   color: green;
 }
 .tasks-section {
+  margin: 0.3125vw;
+  padding: 0.625vw;
   list-style-type: none;
-  margin: 0.3125vw; /* Responsive measurement */
-  padding: 0.625vw; /* Responsive measurement */
-  overflow: hidden;
   display: flex;
   justify-content: center;
-  gap: 0.25vw; /* Responsive measurement */
+  gap: 0.25vw;
+  overflow: hidden;
 }
 
 .tasks-section button {
   display: inline-block;
-  background: orange;
+  background: #ff8e3c;
   border: 0;
   padding: 0.625rem;
   margin-left: 1vw;
   margin-bottom: 0.5rem;
-  font-family: "Poppins";
   border-radius: 0.375rem;
   cursor: pointer;
-  font-size: 1.1em;
+  font-size: 1rem;
   color: white;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .tasks-section button:hover {
-  background-color: white;
-  color: orange;
+  background-color: #abd1c6;
+  color: white;
 }
 
 .tasks-section button:active {
   background-color: white;
-  color: orange;
+  color: #ff8e3c;
 }
 
 .tasks-section button:focus {

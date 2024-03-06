@@ -40,6 +40,14 @@ export default {
 </script>
 
 <style scoped>
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #abd1c6;
+  background-color: #f3f3f3;
+}
 .completed{
   text-decoration: line-through;
 }

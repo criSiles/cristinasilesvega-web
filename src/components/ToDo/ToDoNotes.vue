@@ -1,8 +1,7 @@
 <template>
   <main>
-    <ToDoHeader />
     <div class="notes-section">
-      <h3>Notes</h3>
+      <h3 class="note-title">Notes</h3>
       <p>{{ task.title }}</p>
       <div class="textarea">
         <textarea
@@ -19,63 +18,61 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
-import { useToDoStore } from "@/stores/ToDoStore";
-import ToDoHeader from "@/components/ToDo/ToDoHeader.vue";
+import { ref, onMounted } from 'vue'
+import { useToDoStore } from '@/stores/ToDoStore'
 
 export default {
   props: {
     task: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   setup(props) {
-    const taskVar= ref(null);
-    taskVar.value = props.task;
-    const message = ref(null);
-    message.value = props.task.notes;
-    console.log("This is the message value:", message.value);
+    const taskVar = ref(null)
+    taskVar.value = props.task
+    const message = ref(null)
+    message.value = props.task.notes
+    console.log('This is the message value:', message.value)
     const saveInput = () => {
-      useToDoStore().addNotes(taskVar.value.id, message.value);
-    };
-    const textareaHeight = ref(10);
-    const autoTextarea = ref(null);
+      useToDoStore().addNotes(taskVar.value.id, message.value)
+    }
+    const textareaHeight = ref(10)
+    const autoTextarea = ref(null)
     const adjustTextareaHeight = () => {
-      const textarea = autoTextarea.value;
-      textarea.style.height = "auto"; // Reset the height to auto
-      textarea.style.height = textarea.scrollHeight + "px"; // Set the height to the scrollHeight
-    };
+      const textarea = autoTextarea.value
+      textarea.style.height = 'auto' // Reset the height to auto
+      textarea.style.height = textarea.scrollHeight + 'px' // Set the height to the scrollHeight
+    }
     onMounted(() => {
-      adjustTextareaHeight(); // Call the function initially to set the correct height
-    });
+      adjustTextareaHeight() // Call the function initially to set the correct height
+    })
     return {
       taskVar,
       message,
       textareaHeight,
       autoTextarea,
       adjustTextareaHeight,
-      saveInput,
-    };
-  },
-  components: { ToDoHeader },
-};
+      saveInput
+    }
+  }
+}
 </script>
 <style scoped>
-
 .notes-section {
   max-width: 37.5rem;
   margin: 0 auto;
 }
 
-.notes-section h3 {
-  padding-top: 50px;
-  font-size: 1.5em;
+.note-title {
+  /* padding-top: 50px; */
+  font-size: 2rem;
+  color: white;
   margin-bottom: 5px;
 }
 
 .notes-section p {
-  color: #333;
+  color: #abd1c6;
   margin-bottom: 20px;
 }
 
@@ -83,38 +80,41 @@ export default {
   width: 100%;
   padding: 10px;
   font-size: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid #f3f3f3;
   border-radius: 5px;
   resize: vertical;
+  background-color: #f3f3f3;
 }
 
 .notes-button {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 1em;
-  font-family: "Poppins";
+  font-size: 1rem;
+  font-family: 'Poppins';
   border: 0;
-  border-radius: 6px;
-  background-color: orange;
+  border-radius: 0.375rem;
+  background-color: #ff8e3c;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .notes-button:hover {
-  background-color: #fff;
-  color: orange;
+  background-color: #abd1c6;
+  color: white;
 }
 
-h3{
-margin-top: 2.2rem;
+h3 {
+  margin-top: 2.2rem;
 }
 .textarea {
-    display: flex;
+  display: flex;
   margin-left: 2rem;
   margin-right: 2rem;
 }
-.notes-button{
-    margin-top: 1.3rem;
+.notes-button {
+  margin-top: 1.3rem;
 }
 </style>

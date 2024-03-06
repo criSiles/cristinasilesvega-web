@@ -197,6 +197,7 @@ export default {
   border-bottom: 1px solid #e7e7e7;
   font-size: 1rem;
   margin-right: 0.5rem;
+  box-shadow: none;
 }
 
 .submit button {

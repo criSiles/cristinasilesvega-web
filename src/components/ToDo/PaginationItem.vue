@@ -103,12 +103,12 @@ export default defineComponent({
 /* Pagination */
 .pagination {
   list-style-type: none;
-  margin: 0.3125vw; /* Responsive measurement */
+  margin: 0.4vw; /* Responsive measurement */
   padding: 0.625vw; /* Responsive measurement */
   overflow: hidden;
   display: flex;
   justify-content: center;
-  gap: 0.25vw; /* Responsive measurement */
+  gap: 0.85vw; /* Responsive measurement */
 }
 
 .pagination-item {
@@ -116,13 +116,13 @@ export default defineComponent({
 }
 
 .pagination-button:hover {
-  background-color: white;
-  color: orange;
+  background-color: #abd1c6;
+  color: white;
 }
 
 .pagination-button:active {
-  background-color: white;
-  color: orange;
+  background-color: #abd1c6;
+  color: white;
 }
 
 .pagination-button:focus {
@@ -131,13 +131,11 @@ export default defineComponent({
 
 .pagination-button {
   margin-top: 1rem;
-  background: orange;
-  border: 0;
+  background: #ff8e3c;
   padding: 10px;
-  font-family: "Poppins";
-  border-radius: 6px;
+  border-radius: 0.375rem;
   cursor: pointer;
-  font-size: 1.1em;
+  font-size: 1rem;
   color: white;
   transition: background-color 0.3s, color 0.3s;
 }

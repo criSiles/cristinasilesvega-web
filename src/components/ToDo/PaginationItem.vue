@@ -1,13 +1,23 @@
 <template>
   <ul class="pagination">
     <li class="pagination-item">
-      <button class="pagination-button" type="button" @click="onClickFirstPage" :disabled="isInFirstPage">
+      <button
+        class="pagination-button"
+        type="button"
+        @click="onClickFirstPage"
+        :disabled="isInFirstPage"
+      >
         First
       </button>
     </li>
 
     <li class="pagination-item">
-      <button class="pagination-button" type="button" @click="onClickPreviousPage" :disabled="isInFirstPage">
+      <button
+        class="pagination-button"
+        type="button"
+        @click="onClickPreviousPage"
+        :disabled="isInFirstPage"
+      >
         Previous
       </button>
     </li>
@@ -15,8 +25,12 @@
     <!-- Visible Buttons Start -->
 
     <li v-for="page in pages" :key="page.name" class="pagination-item">
-      <button class="pagination-button" type="button" @click="onClickPage(page.name)" :disabled="page.isDisabled"
-        :class="{ active: isPageActive(page.name) }">
+      <button
+        class="pagination-button"
+        type="button"
+        @click="onClickPage(page.name)"
+        :disabled="page.isDisabled"
+      >
         {{ page.name }}
       </button>
     </li>
@@ -24,13 +38,23 @@
     <!-- Visible Buttons End -->
 
     <li class="pagination-item">
-      <button class="pagination-button" type="button" @click="onClickNextPage" :disabled="isInLastPage">
+      <button
+        class="pagination-button"
+        type="button"
+        @click="onClickNextPage"
+        :disabled="isInLastPage"
+      >
         Next
       </button>
     </li>
 
     <li class="pagination-item">
-      <button class="pagination-button" type="button" @click="onClickLastPage" :disabled="isInLastPage">
+      <button
+        class="pagination-button"
+        type="button"
+        @click="onClickLastPage"
+        :disabled="isInLastPage"
+      >
         Last
       </button>
     </li>
@@ -38,95 +62,80 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "PaginationItem",
+  name: 'PaginationItem',
   props: {
     currentPage: {
       type: Number,
-      required: true,
+      required: true
     },
     totalPages: {
       type: Number,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     pages() {
-      const pages = [];
-      const startPage = this.currentPage - 2;
-      const endPage = this.currentPage + 2;
+      const pages = []
+      const startPage = this.currentPage - 2
+      const endPage = this.currentPage + 2
 
       for (let i = startPage; i <= endPage; i++) {
         if (i >= 1 && i <= this.totalPages) {
           pages.push({
             name: i,
-            isDisabled: this.isPageActive(i),
-          });
+            isDisabled: this.isPageActive(i)
+          })
         }
       }
-      console.log("This.totalpages", this.totalPages);
+      console.log('This.totalpages', this.totalPages)
 
-      return pages;
+      return pages
     },
     isInFirstPage() {
-      return this.currentPage === 1;
+      return this.currentPage === 1
     },
     isInLastPage() {
-      return this.currentPage === this.totalPages;
-    },
+      return this.currentPage === this.totalPages
+    }
   },
   methods: {
     onClickFirstPage() {
-      this.$emit("page-changed", 1);
+      this.$emit('page-changed', 1)
     },
     onClickPreviousPage() {
-      this.$emit("page-changed", this.currentPage - 1);
+      this.$emit('page-changed', this.currentPage - 1)
     },
     onClickPage(page) {
-      this.$emit("page-changed", page);
+      this.$emit('page-changed', page)
     },
     onClickNextPage() {
-      this.$emit("page-changed", this.currentPage + 1);
+      this.$emit('page-changed', this.currentPage + 1)
     },
     onClickLastPage() {
-      this.$emit("page-changed", this.totalPages);
+      this.$emit('page-changed', this.totalPages)
     },
     isPageActive(page) {
-      return this.currentPage === page;
-    },
-  },
-});
+      return this.currentPage === page
+    }
+  }
+})
 </script>
 
-<style scoped>
-/* Pagination */
+<style>
 .pagination {
   list-style-type: none;
-  margin: 0.4vw; /* Responsive measurement */
-  padding: 0.625vw; /* Responsive measurement */
+  margin: 0.4vw;
+  padding: 0.625vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  gap: 0.85vw; /* Responsive measurement */
+  gap: 0.85vw;
 }
 
 .pagination-item {
   display: inline-block;
-}
-
-.pagination-button:hover {
-  background-color: #abd1c6;
-  color: white;
-}
-
-.pagination-button:active {
-  background-color: #abd1c6;
-  color: white;
-}
-
-.pagination-button:focus {
-  outline: none;
 }
 
 .pagination-button {
@@ -139,4 +148,14 @@ export default defineComponent({
   color: white;
   transition: background-color 0.3s, color 0.3s;
 }
+
+.pagination-button:hover {
+  background-color: #abd1c6;
+  color: white;
+}
+/* TODO: Look why does not work */
+.pagination-button:focus{
+  background-color: #abd1c6;
+}
+
 </style>

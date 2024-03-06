@@ -1,16 +1,15 @@
 <template>
   <header class="to-do-header">
     <router-link :to="{ name: 'ToDo' }">
-      <div class="header-title">
-        <img class="header-img" alt="Orange logo" src="../../assets/orange.webp" />
+      <div class="todo-header-title">
+        <img class="todo-header-img" alt="Orange logo" src="../../assets/orange.webp" />
         <h1>To-Do</h1>
       </div>
     </router-link>
   </header>
 </template>
 
-<style scoped>
-/* header */
+<style>
 .to-do-header {
   width: 100%;
   background: #abd1c6;
@@ -19,12 +18,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* background-image: url('../../assets/orange.webp'); 
-  background-repeat: repeat; 
-  background-size: 70px 70px; */
-
 }
-.header-title {
+
+.todo-header-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,14 +32,14 @@
   transition: transform 0.4s ease-in-out;
 }
 
-.header-img {
+.todo-header-img {
   max-width: 3rem;
   margin-left: 0.5rem;
   margin-bottom: 0.5rem;
   transition: transform 0.4s ease-in-out; 
 }
 
-.header-img:hover {
+.todo-header-img:hover {
   transform: scale(1) translate(5px, 5px) rotate(360deg); 
 }
 </style>

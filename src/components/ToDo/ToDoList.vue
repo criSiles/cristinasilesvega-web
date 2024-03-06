@@ -1,22 +1,19 @@
 <template>
   <!-- Task buttons-->
   <div class="tasks-section">
-    <button
-      :class="{ active: currentView === 'all' }"
+    <button  class="toggle-taskview-button"
       @click="showAllTasks"
     >
       All tasks
     </button>
 
-    <button
-      :class="{ active: currentView === 'fav' }"
+    <button class="toggle-taskview-button"
       @click="showFavTasks"
     >
       Fav tasks
     </button>
 
-    <button
-      :class="{ active: currentView === 'done' }"
+    <button  class="toggle-taskview-button"
       @click="showDoneTasks"
     >
       Done tasks
@@ -149,49 +146,6 @@ export default {
 </script>
 
 <style>
-.task-list {
-  margin: 1.25rem auto;
-  max-width: 40rem;
-}
-
-.task {
-  margin: 1.25rem 2vw 0;
-  padding: 0.375rem 1.25rem;
-  background: white;
-  border-radius: 0.25rem;
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.task h3 {
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.task .icons {
-  display: flex;
-  text-align: right;
-
-}
-
-.task i {
-  font-size: 1.4em;
-  margin-left: 6px;
-  cursor: pointer;
-  color: #bbb;
-}
-
-.task i.activeLike {
-  color: #ff005d;
-}
-
-.task i.activeDone {
-  color: green;
-}
 .tasks-section {
   margin: 0.3125vw;
   padding: 0.625vw;
@@ -202,7 +156,12 @@ export default {
   overflow: hidden;
 }
 
-.tasks-section button {
+.task-list {
+  margin: 1.25rem auto;
+  max-width: 40rem;
+}
+
+.toggle-taskview-button {
   display: inline-block;
   background: #ff8e3c;
   border: 0;
@@ -216,17 +175,12 @@ export default {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.tasks-section button:hover {
+.toggle-taskview-button:hover {
   background-color: #abd1c6;
   color: white;
 }
 
-.tasks-section button:active {
-  background-color: white;
-  color: #ff8e3c;
-}
-
-.tasks-section button:focus {
-  outline: none;
+.toggle-taskview-button:focus {
+  background-color: #abd1c6
 }
 </style>

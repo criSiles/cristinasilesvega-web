@@ -1,6 +1,6 @@
 <template>
   <form class="add-task" @submit.prevent="handleSubmit">
-    <input type="text" placeholder="Add a to do" v-model="newTask" />
+    <input class="add-task-input" type="text" placeholder="Add a to do" v-model="newTask" />
     <button class="add-button" type="submit">Add</button>
   </form>
 </template>
@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .add-task {
   max-width: 40rem;
   margin: 1.25rem auto; 
@@ -46,11 +46,20 @@ export default {
   padding-bottom: 0.4rem;
 }
 
+/* TO DO: Delete the default blue box shadow when the input is clicked */
+.add-task-input {
+  padding: 0.625rem; 
+  border-radius: 0.375rem; 
+  color: #555;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
 .add-button {
   background: #ff8e3c;
   border: 0;
   padding: 0.625rem; 
-  font-family: "Poppins";
   border-radius: 0.375rem;
   cursor: pointer;
   font-size: 1rem;
@@ -62,16 +71,4 @@ export default {
   background-color: #abd1c6;
   color: white;
 }
-
-.add-task input {
-  border: 1px solid #abd1c6;
-  padding: 0.625rem; 
-  border-radius: 0.375rem; 
-  color: #555;
-  font-size: 1rem;
-  width: 100%;
-  background-color: #f3f3f3;
-  box-shadow: none;
-}
-
 </style>

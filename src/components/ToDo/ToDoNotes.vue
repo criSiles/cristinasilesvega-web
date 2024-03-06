@@ -2,7 +2,7 @@
   <main>
     <div class="notes-section">
       <h3 class="note-title">Notes</h3>
-      <p>{{ task.title }}</p>
+      <p class="task-title">{{ task.title }}</p>
       <div class="textarea">
         <textarea
           class="custom-textarea"
@@ -12,7 +12,7 @@
           :style="{ height: textareaHeight + 'px' }"
         ></textarea>
       </div>
-      <button class="notes-button" @click="saveInput">Save</button>
+      <button class="save-button" @click="saveInput">Save</button>
     </div>
   </main>
 </template>
@@ -44,6 +44,7 @@ export default {
       textarea.style.height = 'auto' // Reset the height to auto
       textarea.style.height = textarea.scrollHeight + 'px' // Set the height to the scrollHeight
     }
+
     onMounted(() => {
       adjustTextareaHeight() // Call the function initially to set the correct height
     })
@@ -58,39 +59,46 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
 .notes-section {
   max-width: 37.5rem;
   margin: 0 auto;
 }
 
 .note-title {
-  /* padding-top: 50px; */
   font-size: 2rem;
   color: white;
-  margin-bottom: 5px;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
 }
 
-.notes-section p {
+.task-title {
   color: #abd1c6;
   margin-bottom: 20px;
 }
 
+.textarea {
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* TODO: Delete the textarea default blue shadow border  */
 .custom-textarea {
   width: 100%;
   padding: 10px;
   font-size: 1em;
   border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  border-radius: 0.375rem;
   resize: vertical;
   background-color: #f3f3f3;
 }
 
-.notes-button {
+.save-button {
   display: inline-block;
   padding: 10px 20px;
+  margin-top: 1.3rem;
   font-size: 1rem;
-  font-family: 'Poppins';
   border: 0;
   border-radius: 0.375rem;
   background-color: #ff8e3c;
@@ -101,20 +109,8 @@ export default {
     color 0.3s;
 }
 
-.notes-button:hover {
+.save-button:hover {
   background-color: #abd1c6;
   color: white;
-}
-
-h3 {
-  margin-top: 2.2rem;
-}
-.textarea {
-  display: flex;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-.notes-button {
-  margin-top: 1.3rem;
 }
 </style>

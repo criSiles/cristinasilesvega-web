@@ -52,8 +52,8 @@ export default {
   background-color: #078080;
   min-height: 100vh;
 }
-
+/* TO DO: Fix the footer at the bottom using flex and last child */
 .footer {
-  margin-top: 133px;
+  margin-top: 12.35rem;
 }
 </style>

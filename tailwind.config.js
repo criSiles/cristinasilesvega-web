@@ -14,7 +14,7 @@ export default {
   variants: {
     extend: { translate: ['group-hover'] }
   },
-  plugins: [require('@tailwindcss/aspect-ratio'), require('flowbite/plugin')]
+  plugins: [require('@tailwindcss/aspect-ratio')]
 }
 
 //('@tailwindcss/gradient'),

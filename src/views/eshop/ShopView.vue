@@ -28,17 +28,22 @@
                 class="h-full w-full object-cover object-center group-hover:opacity-75"
               />
             </div>
-            <h3 class="mt-2 text-sm font-medium text-gray-700">{{ product.name }}</h3>
-            <p class="-mt-2 text-sm font-semibold text-gray-700">{{ product.price }}</p>
+            <div class="flex justify-between mt-3 mx-1">
+              <h3 class="text-sm font-medium text-gray-600 uppercase">{{ product.name }}</h3>
+              <p class="text-sm font-semibold text-gray-600">{{ product.price }}</p>
+            </div>
           </RouterLink>
           <!-- TO DO: When I click the color change the photo -->
-          <div class="flex justify-center items-center -mt-2">
-            <div
-            v-for="(variant, index) in product.colors"
-            class="w-3 h-3 mt-2 mr-2 rounded-full cursor-pointer"
-            :style="{ backgroundColor: variant.color.toLowerCase() }"
-            :key="index"
-            ></div>
+          <div class="flex justify-between -mt-2">
+            <div class="text-sm mt-2 text-gray-600 ml-1">COLORS</div>
+            <div class="flex flex-row">
+              <div
+              v-for="(variant, index) in product.colors"
+              class="w-3 h-3 mt-3 mr-1 rounded-full cursor-pointer border border-gray-300 active:border-gray-400"
+              :style="{ backgroundColor: variant.color.toLowerCase() }"
+              :key="index"
+              ></div>
+            </div>
           </div>
         </a>
       </div>

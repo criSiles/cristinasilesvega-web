@@ -2,7 +2,7 @@
 export default {
   content: [
     './src/components/eshop/*.{vue,js,ts,jsx,tsx}',
-    './src/views/eshop/*.{vue,js,ts,jsx,tsx}',
+    './src/views/eshop/*.{vue,js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
@@ -12,7 +12,7 @@ export default {
     }
   },
   variants: {
-    extend: { translate: ['group-hover'] }
+    extend: { translate: ['group-hover'], borderWidth: ['hover'] }
   },
   plugins: [require('@tailwindcss/aspect-ratio')]
 }

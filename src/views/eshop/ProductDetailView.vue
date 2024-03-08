@@ -5,7 +5,6 @@
     :premium="premium"
   />
   <ReviewList v-if="product" :product="product" />
-  <ReviewForm :id="product.id" />
 </template>
 
 <script setup>
@@ -16,7 +15,7 @@ import { useEshopStore } from '@/stores/EshopStore'
 import ProductDisplay from '@/components/eshop/ProductDisplay.vue'
 import ShopHeader from '@/components/eshop/ShopHeader.vue'
 import ReviewList from '@/components/eshop/ReviewList.vue'
-import ReviewForm from '@/components/eshop/ReviewForm.vue'
+
 
 const eshopStore = useEshopStore()
 

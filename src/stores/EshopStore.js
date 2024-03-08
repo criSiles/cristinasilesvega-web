@@ -79,11 +79,13 @@ export const useEshopStore = defineStore('eshopStore', {
 
     updateCart(productCart) {
       const productIndexInCart = this.cart.findIndex(
-        // if cartItem is already in the cart, findIndez will return the index of the product, if nor it will return -1
+        // if cartItem is already in the cart, findIndex will return the index of the product, if nor it will return -1
         (cartItem) =>
           cartItem.id === productCart.id &&
           cartItem.color === productCart.color &&
-          cartItem.size === productCart.size
+          cartItem.size === productCart.size &&
+          cartItem.price === productCart.price &&
+          cartItem.imageSrc === productCart.imageSrc
       )
 
       if (productIndexInCart !== -1) {

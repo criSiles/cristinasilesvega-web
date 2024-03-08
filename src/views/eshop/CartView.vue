@@ -146,14 +146,14 @@ const totalItemCount = computed(() => {
   return cart.reduce((acc, product) => acc + product.quantity, 0)
 })
 
-// This doesn't work
-const totalCost = computed(() => {
-  let total = 0
-  for (let i = 0; i < cart.length; i++) {
-    total += cart.product[i].price * cart[i].quantity
-  }
-  return total
-})
+// TO DO: Fix this, doesn't work and breaks the app
+// const totalCost = computed(() => {
+//   let total = 0
+//   for (let i = 0; i < cart.length; i++) {
+//     total += cart[i].product.price * cart[i].product.quantity
+//   }
+//   return total
+// })
 
 const open = ref(true)
 </script>

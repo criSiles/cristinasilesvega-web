@@ -5,12 +5,12 @@
       <label
         v-for="(size, index) in sizes"
         :key="index"
+        class="h-1 group relative flex items-center justify-center py-5 sm:py-6 border text-sm font-light uppercase focus:outline-none"
         :class="[
           isAvailable(size)
             ? 'cursor-pointer bg-white text-gray-600'
             : 'cursor-not-allowed bg-gray-100 text-gray-300 border-gray-100',
           size === selectedSize ? 'bg-stone-950 text-white' : '',
-          'h-1 group relative flex items-center justify-center py-3 px-4 border text-sm font-light uppercase focus:outline-none sm:flex-1 sm:py-6'
         ]"
       >
         <span :id="'size-choice-' + index + '-label'">
@@ -57,7 +57,7 @@
 
       <a
         @click="togglePopUp"
-        class="cursor-pointer text-sm font-medium px-4 text-gray-9500 hover:text-gray-500 group"
+        class="cursor-pointer text-sm font-medium px-4 text-gray-950 hover:text-gray-500 group"
         >Size guide
         <span class="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">&rarr;</span>
       </a>

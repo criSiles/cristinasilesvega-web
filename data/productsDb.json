@@ -5,6 +5,7 @@
       "name": "Gym Outfit",
       "href": "#",
       "price": "50€",
+      "description": "This set includes a tank top and cycling leggins. Perfect for your gym sessions. The fabric is soft and breathable. Their compressive design is ideal for high impact exercises. The set is available in 5 colors and 7 sizes.",
       "colors": [
         {
           "color": "black",
@@ -198,6 +199,7 @@
       "name": "Reusable cup",
       "href": "#",
       "price": "18€",
+      "description": "This reusable cup is made of bamboo fiber and is perfect for cold drinks. Don't use it with hot drinks. It has a capacity of 400ml and is available in 4 colors.",
       "colors": [
         {
           "color": "black",
@@ -277,6 +279,7 @@
       "name": "Pilates mat",
       "href": "#",
       "price": "25€",
+      "description": "This pilates mat is made of TPE, a material that is eco-friendly and recyclable. It is 6mm thick and has a non-slip surface. It is available in 1 vibrant color.",
       "colors": [
         {
           "color": "Blue",
@@ -346,6 +349,7 @@
       "name": "Scrunchy",
       "href": "#",
       "price": "6€",
+      "description": "This scrunchy is made of 100% organic cotton and is perfect for a ponytail or a bun. It is available in 5 colors.",
       "colors": [
         {
           "color": "navy",

@@ -1,20 +1,20 @@
 <template>
   <!-- TO DO: When is in mobile I want the 1st&2nd span in a line and the 3rd in another bellow-->
-  <div>
+  <div class="flex justify-center">
     <span class="text-3xl text-stone-950">
       {{ averageReview() }}
     </span>
     <span class="text-3xl text-stone-950" v-for="(star, index) in stars" :key="index">
       {{ star ? '★' : '☆' }}
     </span>
+  </div>
     <span class="text-lg text-stone-950 upper">
       Based on {{ product.reviews.length }} reviews
     </span>
-  </div>
   <div class="mt-10 relative">
     <div>
       <!-- TO DO: Apply translate y -->
-      <button @click="togglePopUp" class="border bg-white text-gray-600 w-52 h-12 m-8 p-2">
+      <button @click="togglePopUp" class="border bg-white text-gray-600 w-52 h-12 mb-12 p-2">
         <i class="fa-regular fa-pen-to-square"></i> Leave a review
       </button>
       <Transition
@@ -37,7 +37,7 @@
         <label
           v-for="(review, index) in product.reviews"
           :key="index"
-          class="group relative flex flex-col justify-start width-auto border py-3 px-4 text-sm font-medium focus:outline-none sm:flex-1 sm:py-6 cursor-pointer shadow-sm"
+          class="text-left group relative flex flex-col justify-start width-auto border py-3 px-4 text-sm font-medium focus:outline-none sm:flex-1 sm:py-6 cursor-pointer shadow-sm"
         >
           <span class="flex flex-start font-semibold text-stone-950">
             {{ review.name }}

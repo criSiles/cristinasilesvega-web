@@ -1,6 +1,5 @@
 <template>
-  <section class="flex white">
-    <div class="p-4">
+  <section class="flex white mb-8">
       <div class="flex flex-row flex-wrap md:flex-nowrap">
         <div class="w-[100%] md:w-[40%]" v-if="product">
           <img
@@ -12,7 +11,7 @@
 
         <div class="w-[70%] md:w-[50%] mx-auto">
           <div class="flex justify-between -mt-22 md:mt-10">
-            <h1 class="text-xl uppercase font-medium">{{ product.name }}</h1>
+            <h1 class="text-xl uppercase font-medium text-gray-950">{{ product.name }}</h1>
             <h1 class="text-xl font-light">{{ product.price }}</h1>
           </div>
           <!-- <p class="text-lg" v-if="inStock">In Stock</p>
@@ -36,9 +35,14 @@
             class="mt-10"
           ></SizesComponent>
           <PrettyButton :isActive="inStock" @click="addToCart" class="mx-auto"> TO BUY </PrettyButton>
+          <div class="flex uppercase  text-gray-950">
+            Description: 
+          </div>
+          <div class="font-light text-left">
+            {{ product.description }}
+          </div>
         </div>
       </div>
-    </div>
   </section>
 </template>
 
@@ -60,7 +64,7 @@ const props = defineProps({
   }
 })
 
-const getImagePath = (imageSrc) => `../../src/assets/eshop/${imageSrc}`
+const getImagePath = (imageSrc) => `/assets/eshop/${imageSrc}`
 
 const selectedVariant = ref(0)
 

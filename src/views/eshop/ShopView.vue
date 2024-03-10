@@ -60,5 +60,5 @@ const eshopStore = useEshopStore()
 const { products, loading } = storeToRefs(eshopStore)
 eshopStore.fetchProducts()
 
-const getImagePath = (imageSrc) => `../../src/assets/eshop/${imageSrc}`
+const getImagePath = (imageSrc) => `/eshop/${imageSrc}`
 </script>

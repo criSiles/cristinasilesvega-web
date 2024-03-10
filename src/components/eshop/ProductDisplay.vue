@@ -52,6 +52,8 @@ import { useEshopStore } from '@/stores/EshopStore'
 import PrettyButton from '../eshop/PrettyButton.vue'
 import SizesComponent from './SizesComponent.vue'
 
+
+
 const props = defineProps({
   product: {
     type: Object,
@@ -64,7 +66,7 @@ const props = defineProps({
   }
 })
 
-const getImagePath = (imageSrc) => `/assets/eshop/${imageSrc}`
+const getImagePath = (imageSrc) => `/eshop/${imageSrc}`
 
 const selectedVariant = ref(0)
 

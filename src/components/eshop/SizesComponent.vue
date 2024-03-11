@@ -9,7 +9,7 @@
       class="h-1 group relative flex items-center justify-center py-5 sm:py-6 border text-sm font-light uppercase focus:outline-none"
       :class="[
         isAvailable(size)
-        ? 'cursor-pointer bg-white text-gray-600'
+        ? 'cursor-pointer bg-white text-gray-600 border-gray-200'
         : 'cursor-not-allowed bg-gray-100 text-gray-300 border-gray-100',
         size === selectedSize ? 'bg-gray-950 text-white' : '',
       ]"

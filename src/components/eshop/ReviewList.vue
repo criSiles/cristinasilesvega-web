@@ -14,7 +14,7 @@
   <div class="mt-10 relative">
     <div>
       <!-- TO DO: Apply translate y -->
-      <button @click="togglePopUp" class="border bg-white text-gray-600 w-52 h-12 mb-12 p-2">
+      <button @click="togglePopUp" class="border border-gray-200 bg-white text-gray-600 w-52 h-12 mb-12 p-2">
         <i class="fa-regular fa-pen-to-square"></i> Leave a review
       </button>
       <Transition
@@ -26,7 +26,7 @@
         leave-to-class="opacity-0"
       >
     </Transition>
-    <ReviewForm class="-mt-24 -mb-20" :id="product.id" @close="togglePopUp" v-show="popUp"></ReviewForm>
+    <ReviewForm class=" -mt-32 -mb-72" :id="product.id" @close="togglePopUp" v-show="popUp"></ReviewForm>
 
     </div>
   </div>

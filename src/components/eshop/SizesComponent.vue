@@ -2,16 +2,17 @@
   <fieldset class="mt-4 border-0">
     <legend class="sr-only">Choose a size</legend>
     <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+      <!-- TO DO: Check why I cannot put bg-gray-950 -->
       <label
-        v-for="(size, index) in sizes"
-        :key="index"
-        class="h-1 group relative flex items-center justify-center py-5 sm:py-6 border text-sm font-light uppercase focus:outline-none"
-        :class="[
-          isAvailable(size)
-            ? 'cursor-pointer bg-white text-gray-600'
-            : 'cursor-not-allowed bg-gray-100 text-gray-300 border-gray-100',
-          size === selectedSize ? 'bg-stone-950 text-white' : '',
-        ]"
+      v-for="(size, index) in sizes"
+      :key="index"
+      class="h-1 group relative flex items-center justify-center py-5 sm:py-6 border text-sm font-light uppercase focus:outline-none"
+      :class="[
+        isAvailable(size)
+        ? 'cursor-pointer bg-white text-gray-600'
+        : 'cursor-not-allowed bg-gray-100 text-gray-300 border-gray-100',
+        size === selectedSize ? 'bg-gray-950 text-white' : '',
+      ]"
       >
         <span :id="'size-choice-' + index + '-label'">
           {{ size }}

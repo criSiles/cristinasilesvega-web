@@ -92,7 +92,7 @@ export const useEshopStore = defineStore('eshopStore', {
         console.log('This product is already in the cart')
         this.cart[productIndexInCart].quantity++
       } else {
-        console.log('This product is not in the cart')
+        console.log('This product is not in the cart',this.cart)
         this.cart.push(productCart)
       }
 

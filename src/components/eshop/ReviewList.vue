@@ -1,14 +1,14 @@
 <template>
   <!-- TO DO: When is in mobile I want the 1st&2nd span in a line and the 3rd in another bellow-->
   <div class="flex justify-center">
-    <span class="text-3xl text-stone-950">
+    <span class="text-3xl text-gray-950">
       {{ averageReview() }}
     </span>
-    <span class="text-3xl text-stone-950" v-for="(star, index) in stars" :key="index">
+    <span class="text-3xl text-gray-950" v-for="(star, index) in stars" :key="index">
       {{ star ? '★' : '☆' }}
     </span>
   </div>
-    <span class="text-lg text-stone-950 upper">
+    <span class="text-lg text-gray-950 upper">
       Based on {{ product.reviews.length }} reviews
     </span>
   <div class="mt-10 relative">
@@ -39,10 +39,10 @@
           :key="index"
           class="text-left group relative flex flex-col justify-start width-auto border py-3 px-4 text-sm font-medium focus:outline-none sm:flex-1 sm:py-6 cursor-pointer shadow-sm"
         >
-          <span class="flex flex-start font-semibold text-stone-950">
+          <span class="flex flex-start font-semibold text-gray-950">
             {{ review.name }}
           </span>
-          <span class="flex text-base font-semibold text-stone-950">
+          <span class="flex text-base font-semibold text-gray-950">
             <span v-for="(star, index) in stars" :key="index">
               {{ star ? '★' : '☆' }}
             </span>

@@ -102,7 +102,7 @@
                     <div class="mt-6">
                       <a
                         href="#"
-                        class="flex items-center justify-center border border-transparent bg-stone-950 px-6 py-3 text-base font-light text-white hover:bg-white hover:text-stone-950 hover:border hover:border-stone-950"
+                        class="flex items-center justify-center border border-transparent bg-gray-950 px-6 py-3 text-base font-light text-white hover:bg-white hover:text-gray-950 hover:border hover:border-gray-950"
                         >Checkout</a
                       >
                     </div>
@@ -146,14 +146,10 @@ const totalItemCount = computed(() => {
   return cart.reduce((acc, product) => acc + product.quantity, 0)
 })
 
-// TO DO: Fix this, doesn't work and breaks the app
-// const totalCost = computed(() => {
-//   let total = 0
-//   for (let i = 0; i < cart.length; i++) {
-//     total += cart[i].product.price * cart[i].product.quantity
-//   }
-//   return total
-// })
+
+const totalCost = computed(() => {
+  return cart.reduce((acc, product) => acc + parseFloat(product.price) * product.quantity, 0)
+})
 
 const open = ref(true)
 </script>

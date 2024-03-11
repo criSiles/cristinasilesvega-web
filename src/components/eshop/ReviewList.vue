@@ -26,7 +26,7 @@
         leave-to-class="opacity-0"
       >
     </Transition>
-    <ReviewForm class=" -mt-32 -mb-72" :id="product.id" @close="togglePopUp" v-show="popUp"></ReviewForm>
+    <ReviewForm class=" -mt-26 -mb-44" :id="product.id" @close="togglePopUp" v-show="popUp"></ReviewForm>
 
     </div>
   </div>

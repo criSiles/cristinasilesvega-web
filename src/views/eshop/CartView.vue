@@ -53,8 +53,7 @@
                               class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200"
                             >
                               <img
-                                :src="product.imageSrc"
-                                :alt="product.imageAlt"
+                                :src="getImagePath(product.imageSrc)"
                                 class="h-full w-full object-cover object-center"
                               />
                             </div>
@@ -146,10 +145,11 @@ const totalItemCount = computed(() => {
   return cart.reduce((acc, product) => acc + product.quantity, 0)
 })
 
-
 const totalCost = computed(() => {
   return cart.reduce((acc, product) => acc + parseFloat(product.price) * product.quantity, 0)
 })
+
+const getImagePath = (imageSrc) => `/eshop/${imageSrc}`
 
 const open = ref(true)
 </script>

@@ -14,9 +14,6 @@
             <h1 class="text-xl uppercase font-medium text-gray-950">{{ product.name }}</h1>
             <h1 class="text-xl font-light">{{ product.price }}</h1>
           </div>
-          <!-- <p class="text-lg" v-if="inStock">In Stock</p>
-          <p class="text-lg" v-else>Out of Stock</p> -->
-          <!-- <p class="text-lg">Shipping: {{ shipping }}</p> -->
           <div class="flex justify-start ">
             <div class="text-sm mt-2  text-gray-600 mr-2">COLORS</div>
             <div class="flex flex-row">
@@ -91,14 +88,6 @@ const sizesAsArray = computed(() => {
       .filter((size) => size !== null && size !== undefined && size !== '')
   )
 })
-
-// TO DO: Implement premium shipping if they're logged in
-// const shipping = computed(() => {
-//   if (props.premium) {
-//     return 'Free'
-//   }
-//   return 2.99
-// })
 
 const selectedSize = ref('')
 

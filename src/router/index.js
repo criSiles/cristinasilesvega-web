@@ -9,7 +9,6 @@ import ProjectsWipView from '../views/ProjectsWipView.vue'
 import ProjectsDisplayView from '../views/ProjectsDisplayView.vue'
 import ShopView from '../views/eshop/ShopView.vue'
 import ProductDetailView from '../views/eshop/ProductDetailView.vue'
-import CartView from '../views/eshop/CartView.vue'
 
 const routes = [
   {
@@ -58,11 +57,6 @@ const routes = [
     name: 'ProductDetails',
     component: ProductDetailView
   },
-  {
-    path: '/shop/cart',
-    name: 'Cart',
-    component: CartView
-  }
 ]
 
 const router = createRouter({

@@ -24,7 +24,8 @@ export const useEshopStore = defineStore('eshopStore', {
 
       console.log('Found product:', product)
       return product
-    }
+    },
+
   },
   actions: {
     async fetchProducts() {

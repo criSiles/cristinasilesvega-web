@@ -57,7 +57,6 @@
                                 class="h-full w-full object-cover object-center"
                               />
                             </div>
-
                             <div class="ml-4 flex flex-1 flex-col">
                               <div>
                                 <div
@@ -68,13 +67,16 @@
                                   </h3>
                                   <p class="ml-4">{{ product.price }}</p>
                                 </div>
-                                <p class="mt-1 text-sm text-gray-500">{{ product.color }}</p>
+                                <p class="mt-1 text-sm text-gray-500 lowercase">
+                                  {{ product.color }}
+                                </p>
                               </div>
                               <div class="flex flex-1 items-end justify-between text-sm">
                                 <p class="text-gray-500">x{{ product.quantity }}</p>
 
                                 <div class="flex">
                                   <button
+                                    @click="removeProduct(product.id)"
                                     type="button"
                                     class="font-medium text-gray-400 hover:text-gray-600"
                                   >
@@ -116,8 +118,8 @@
                         >
                           <router-link :to="{ name: 'Shop' }">
                             Continue Shopping
-                            <span aria-hidden="true"> &rarr;</span> </router-link
-                          >>
+                            <span aria-hidden="true"> &rarr;</span>
+                          </router-link>
                         </button>
                       </p>
                     </div>
@@ -138,6 +140,8 @@ import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } fro
 import { XMarkIcon } from '@heroicons/vue/24/outline'
 import { useEshopStore } from '@/stores/EshopStore'
 
+const open = ref(true)
+
 const eshopStore = useEshopStore()
 const cart = eshopStore.cart
 
@@ -151,5 +155,7 @@ const totalCost = computed(() => {
 
 const getImagePath = (imageSrc) => `/eshop/${imageSrc}`
 
-const open = ref(true)
+const removeProduct = (productId) => {
+  eshopStore.removeFromCart(productId)
+}
 </script>

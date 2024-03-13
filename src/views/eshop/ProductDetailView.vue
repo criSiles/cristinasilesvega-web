@@ -2,13 +2,12 @@
   <ShopHeader />
   <ProductDisplay
     :product="product"
-    :premium="premium"
   />
   <ReviewList v-if="product" :product="product" />
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useEshopStore } from '@/stores/EshopStore'
 
@@ -18,8 +17,6 @@ import ReviewList from '@/components/eshop/ReviewList.vue'
 
 
 const eshopStore = useEshopStore()
-
-const premium = ref(true)
 
 const route = useRoute()
 const id = parseInt(route.params.id)

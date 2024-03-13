@@ -67,8 +67,12 @@
                                   </h3>
                                   <p class="ml-4">{{ product.price }}</p>
                                 </div>
+
                                 <p class="mt-1 text-sm text-gray-500 lowercase">
                                   {{ product.color }}
+                                </p>
+                                <p class="mt-1 text-sm text-gray-500 uppercase">
+                                  {{ product.size }}
                                 </p>
                               </div>
                               <div class="flex flex-1 items-end justify-between text-sm">

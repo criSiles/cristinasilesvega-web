@@ -57,10 +57,6 @@ const props = defineProps({
     default: () => ({ colors: [] }),
     required: true
   },
-  premium: {
-    type: Boolean,
-    required: true
-  }
 })
 
 const getImagePath = (imageSrc) => `/eshop/${imageSrc}`

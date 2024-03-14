@@ -1,5 +1,4 @@
 <template>
-  <!-- TO DO: When is in mobile I want the 1st&2nd span in a line and the 3rd in another bellow-->
   <div class="flex justify-center">
     <span class="text-3xl text-gray-950">
       {{ averageReview() }}

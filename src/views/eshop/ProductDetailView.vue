@@ -1,6 +1,6 @@
 <template>
   <ShopHeader />
-  <ProductDisplay
+  <ProductDetails
     :product="product"
   />
   <ReviewList v-if="product" :product="product" />
@@ -12,7 +12,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useEshopStore } from '@/stores/EshopStore'
 
-import ProductDisplay from '@/components/eshop/ProductDisplay.vue'
+import ProductDetails from '@/components/eshop/ProductDetails.vue'
 import ShopHeader from '@/components/eshop/ShopHeader.vue'
 import ReviewList from '@/components/eshop/ReviewList.vue'
 import ShopFooter from '@/components/eshop/ShopFooter.vue'

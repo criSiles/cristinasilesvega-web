@@ -9,6 +9,7 @@ import ProjectsWipView from '../views/ProjectsWipView.vue'
 import ProjectsDisplayView from '../views/ProjectsDisplayView.vue'
 import ShopView from '../views/eshop/ShopView.vue'
 import ProductDetailView from '../views/eshop/ProductDetailView.vue'
+import ProductCategoryView from '../views/eshop/ProductCategoryView.vue'
 
 const routes = [
   {
@@ -57,6 +58,11 @@ const routes = [
     name: 'ProductDetails',
     component: ProductDetailView
   },
+  {
+    path: '/shop/:category',
+    name: 'ProductCategory',
+    component: ProductCategoryView 
+  }
 ]
 
 const router = createRouter({

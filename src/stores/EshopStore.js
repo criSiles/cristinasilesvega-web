@@ -25,7 +25,21 @@ export const useEshopStore = defineStore('eshopStore', {
       console.log('Found product:', product)
       return product
     },
+    // I don't know yet if I'm going to use this
+    getProductByCategory: (state) => (category) => {
+      console.log('All the products:', state.products)
+      console.log('Getting the products with category:', category)
 
+      const products = state.products.filter((p) => p.category === category)
+
+      if (products === undefined) {
+        console.log('The products do not exist')
+        return
+      }
+
+      console.log('Found products:', products)
+      return products
+    }
   },
   actions: {
     async fetchProducts() {

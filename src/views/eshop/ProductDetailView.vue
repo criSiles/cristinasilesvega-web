@@ -4,6 +4,7 @@
     :product="product"
   />
   <ReviewList v-if="product" :product="product" />
+  <ShopFooter/>
 </template>
 
 <script setup>
@@ -14,6 +15,7 @@ import { useEshopStore } from '@/stores/EshopStore'
 import ProductDisplay from '@/components/eshop/ProductDisplay.vue'
 import ShopHeader from '@/components/eshop/ShopHeader.vue'
 import ReviewList from '@/components/eshop/ReviewList.vue'
+import ShopFooter from '@/components/eshop/ShopFooter.vue'
 
 
 const eshopStore = useEshopStore()

@@ -49,12 +49,15 @@
       </div>
     </div>
   </div>
+  <ShopFooter />
 </template>
 
 <script setup>
 import { useEshopStore } from '../../stores/EshopStore'
 import { storeToRefs } from 'pinia'
+
 import ShopHeader from '@/components/eshop/ShopHeader.vue'
+import ShopFooter from '@/components/eshop/ShopFooter.vue'
 
 const eshopStore = useEshopStore()
 const { products, loading } = storeToRefs(eshopStore)

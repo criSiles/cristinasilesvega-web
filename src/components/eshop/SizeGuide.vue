@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 left-0 z-10 w-full h-full bg-gray-200 bg-opacity-50 flex items-center justify-center"
+    class="fixed top-0 left-0 z-10 w-full h-full bg-gray-200 bg-opacity-50 flex items-center justify-center sm:w-50% sm:mx-auto "
   >
     <div
       class="bg-white text-black relative w-2/5 p-8 rounded-lg shadow-md shadow-gray-500 inline-block"
@@ -14,7 +14,7 @@
       </div>
       <h1>Size Guide</h1>
       <div class="overflow-x-auto">
-        <table class="table-auto w-full ">
+        <table class="table-auto sm:w-full w-2/3 ">
           <thead>
             <tr>
               <th class="px-4 py-2">SIZE</th>

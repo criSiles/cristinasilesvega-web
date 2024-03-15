@@ -85,6 +85,7 @@ export default {
       popUp: false
     }
   },
+emits: ['size-selected'],
   methods: {
     isAvailable(size) {
       return this.availableSizes.includes(size)

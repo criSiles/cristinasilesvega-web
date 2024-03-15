@@ -29,7 +29,6 @@
           <SizesComponent
             @size-selected="updateSize"
             :availableSizes="sizesAsArray"
-            class="mt-10"
           ></SizesComponent>
           <PrettyButton :isActive="inStock" @click="addToCart" class="mx-auto"> TO BUY </PrettyButton>
           <div class="flex uppercase  text-gray-950">

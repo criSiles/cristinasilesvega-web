@@ -1,6 +1,6 @@
 <template>
   <header class="w-full min-h-0 white">
-    <div class="bg-black text-xs text-white p-1">Elevate your workout wardrobe today!</div>
+    <div class="bg-black text-xs text-white p-1">Elevate your workout essentials today!</div>
     <nav class="flex flex-col lg:flex-row text-center justify-between items-center px-4 m-8 ml-4">
       <RouterLink :to="{ name: 'Shop' }">
         <h1 class="font-bold text-3xl tracking-widest text-gray-800 no-underline uppercase">

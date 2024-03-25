@@ -1,6 +1,7 @@
 <template>
   <portfolioHeader />
   <portfolioProfile/>
+  <portfolioSkills/>
   <!-- <section id="profile">
     <div class="section__pic-container">
       <img src="/src/assets/circleCris.png" alt="Cristina Siles profile picture" />
@@ -35,7 +36,7 @@
     </div>
   </section> -->
 
-  <section id="about">
+  <!-- <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
@@ -72,104 +73,10 @@
       class="icon arrow"
       onclick="location.href='./#skills'"
     />
-  </section>
-  
-  <section id="skills">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SASS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Material UI</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="/src/assets/portfolio/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="/src/assets/portfolio/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'"
-    />
-  </section>
+  </section> -->
 
-  <section id="projects">
+
+  <!-- <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
@@ -278,11 +185,12 @@
       </div>
     </nav>
     <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-  </footer>
+  </footer> -->
 </template>
 <script setup>
 import portfolioHeader from '@/components/portfolio/portfolioHeader.vue'
 import portfolioProfile from '@/components/portfolio/portfolioProfile.vue'
+import portfolioSkills from '@/components/portfolio/portfolioSkills.vue'
 // function toggleMenu() {
 //   const menu = document.querySelector('.menu-links')
 //   const icon = document.querySelector('.hamburger-icon')

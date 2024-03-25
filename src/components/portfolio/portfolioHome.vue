@@ -2,39 +2,8 @@
   <portfolioHeader />
   <portfolioProfile/>
   <portfolioSkills/>
-  <!-- <section id="profile">
-    <div class="section__pic-container">
-      <img src="/src/assets/circleCris.png" alt="Cristina Siles profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Cristina Siles</h1>
-      <p class="section__text__p2">Frontend Developer</p>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2"
-          onclick="window.open('/src/assets/portfolio/CSV_CV_2024.pdf')"
-        >
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-      </div>
-      <div id="socials-container">
-        <img
-          src="/src/assets/portfolio/linkedin.png"
-          alt="My LinkedIn profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/cristina-siles-vega/'"
-        />
-        <img
-          src="/src/assets/portfolio/github.png"
-          alt="My Github profile"
-          class="icon"
-          onclick="location.href='https://github.com/criSiles'"
-        />
-      </div>
-    </div>
-  </section> -->
+  <portfolioProjects/>
+
 
   <!-- <section id="about">
     <p class="section__text__p1">Get To Know More</p>
@@ -191,6 +160,7 @@
 import portfolioHeader from '@/components/portfolio/portfolioHeader.vue'
 import portfolioProfile from '@/components/portfolio/portfolioProfile.vue'
 import portfolioSkills from '@/components/portfolio/portfolioSkills.vue'
+import portfolioProjects from '@/components/portfolio/portfolioProjects.vue'
 // function toggleMenu() {
 //   const menu = document.querySelector('.menu-links')
 //   const icon = document.querySelector('.hamburger-icon')

@@ -105,6 +105,7 @@ section {
 .name {
   font-size: 3rem;
   text-align: center;
+  cursor: pointer;
 }
 .role {
   font-size: 1.9rem;

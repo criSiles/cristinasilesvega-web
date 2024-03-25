@@ -1,7 +1,7 @@
 <template>
-  <section id="skills" class="skills">
+  <section id="skills">
     <h1 class="title">Skills</h1>
-    <p class="subtitle">Some of the languages, frameworks and tools I know are...</p>
+    <p class="subtitle">Languages, frameworks and tools I know</p>
     <div class="logos-grid">
       <figure class="skill-container" v-for="skill in skills" :key="skill.name">
         <!-- I'm binding a style attribute, that is a computed property, a function that computes the color of the shadow and returns a string with the drop-shadow value  -->
@@ -95,14 +95,9 @@ section {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 2rem;
-  font-weight: 500;
 }
 .section-container {
   display: flex;
-}
-.skills {
-  padding-bottom: 4rem;
-  margin-bottom: 2rem;
 }
 .coding-container {
   display: flex;

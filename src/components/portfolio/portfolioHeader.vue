@@ -1,7 +1,7 @@
 <template>
   <header class="header-container">
     <nav id="desktop-nav">
-      <router-link :to="{ name: 'Home' }">
+      <router-link :to="{ name: 'Portfolio' }">
         <div class="title">Cristina Siles Vega</div>
       </router-link>
     </nav>

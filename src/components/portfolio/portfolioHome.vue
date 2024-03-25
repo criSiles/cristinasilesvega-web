@@ -1,11 +1,6 @@
 <template>
-  <portfolioHeader />
-  <portfolioProfile/>
-  <portfolioSkills/>
-  <portfolioProjects/>
 
-
-  <!-- <section id="about">
+ <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
@@ -42,85 +37,9 @@
       class="icon arrow"
       onclick="location.href='./#skills'"
     />
-  </section> -->
+  </section> 
 
-
-  <!-- <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="/src/assets/portfolio/todo.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="/src/assets/portfolio/eshop.jpg" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="/src/assets/portfolio/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
-  </section>
-
-  <section id="contact">
+<section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
@@ -141,7 +60,7 @@
         <p><a href="https://www.linkedin.com">LinkedIn</a></p>
       </div>
     </div>
-  </section>
+  </section> 
   <footer>
     <nav>
       <div class="nav-links-container">
@@ -154,19 +73,10 @@
       </div>
     </nav>
     <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-  </footer> -->
+  </footer>
 </template>
 <script setup>
-import portfolioHeader from '@/components/portfolio/portfolioHeader.vue'
-import portfolioProfile from '@/components/portfolio/portfolioProfile.vue'
-import portfolioSkills from '@/components/portfolio/portfolioSkills.vue'
-import portfolioProjects from '@/components/portfolio/portfolioProjects.vue'
-// function toggleMenu() {
-//   const menu = document.querySelector('.menu-links')
-//   const icon = document.querySelector('.hamburger-icon')
-//   menu.classList.toggle('open')
-//   icon.classList.toggle('open')
-// }
+
 </script>
 <style scoped>
 * {
@@ -351,7 +261,6 @@ section {
 .section__text__p1 {
   text-align: center;
 }
-
 
 .title {
   font-size: 3rem;

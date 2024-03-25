@@ -1,6 +1,5 @@
 <template>
   <div class="contact">
-    <h1 class="title">Contact</h1>
     <form class="contact-form" @submit="handleSubmit($event)">
       <label class="contact-label">Email:</label>
       <input
@@ -139,7 +138,8 @@ export default {
   color: #0e2431;
 }
 .contact {
-  margin-bottom: 5rem;
+  margin-top: -2rem;
+  margin-bottom: 4rem;
 }
 .title {
   text-align: center;

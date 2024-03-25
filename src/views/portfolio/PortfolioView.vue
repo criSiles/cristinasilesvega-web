@@ -1,7 +1,14 @@
 <template>
-<portfolioHome/>
-<!-- <singlePageHome/> -->
+  <portfolioHeader />
+  <portfolioProfile />
+  <portfolioSkills />
+  <portfolioProjects />
+  <portfolioContact />   
 </template>
 <script setup>
-import portfolioHome from '@/components/portfolio/portfolioHome.vue'
+import portfolioHeader from '@/components/portfolio/portfolioHeader.vue'
+import portfolioProfile from '@/components/portfolio/portfolioProfile.vue'
+import portfolioSkills from '@/components/portfolio/portfolioSkills.vue'
+import portfolioProjects from '@/components/portfolio/portfolioProjects.vue'
+import portfolioContact from '@/components/portfolio/portfolioContact.vue'
 </script>

@@ -3,30 +3,36 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ToDoNotesView from '../views/ToDo/ToDoNotesView.vue'
 import ToDoView from '../views/ToDo/ToDoView.vue'
 import HomeView from '../views/HomeView.vue'
-import ContactView from '../views/ContactView.vue'
-import AboutMeView from '../views/AboutMeView.vue'
+// import ContactView from '../views/ContactView.vue'
+// import AboutMeView from '../views/AboutMeView.vue'
 import ProjectsWipView from '../views/ProjectsWipView.vue'
 import ProjectsDisplayView from '../views/ProjectsDisplayView.vue'
 import ShopView from '../views/eshop/ShopView.vue'
 import ProductDetailView from '../views/eshop/ProductDetailView.vue'
-import ProductCategoryView from '../views/eshop/ProductCategoryView.vue'
+import ProductCategoryView from '../views/eshop/ProductCategoryView.vue' 
+import PortfolioView from '../views/portfolio/PortfolioView.vue'
 
 const routes = [
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: PortfolioView
+  },
   {
     path: '/',
     name: 'Home',
     component: HomeView
   },
-  {
-    path: '/aboutme',
-    name: 'AboutMe',
-    component: AboutMeView
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: ContactView
-  },
+  // {
+  //   path: '/aboutme',
+  //   name: 'AboutMe',
+  //   component: AboutMeView
+  // },
+  // {
+  //   path: '/contact',
+  //   name: 'Contact',
+  //   component: ContactView
+  // },
   {
     path: '/workinprogress',
     name: 'ProjectsWip',
@@ -61,7 +67,7 @@ const routes = [
   {
     path: '/shop/:category',
     name: 'ProductCategory',
-    component: ProductCategoryView 
+    component: ProductCategoryView
   }
 ]
 

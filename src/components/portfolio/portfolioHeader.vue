@@ -1,64 +1,48 @@
 <template>
   <header class="header-container">
-    <router-link :to="{ name: 'Home' }">
-      <div class="title">
-        <a class="element name">Cristina Siles Vega</a>
-      </div>
-    </router-link>
-    <nav>
-      <div class="navbar">
-        <div class="container nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <div class="menu-items overlay">
-            <li><a href="/">Home</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/aboutme">About</a></li>
-          </div>
+    <nav id="desktop-nav">
+      <router-link :to="{ name: 'Home' }">
+        <div class="title">Cristina Siles Vega</div>
+      </router-link>
+    </nav>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="menu-items overlay">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
         </div>
       </div>
     </nav>
   </header>
 </template>
-
 <style scoped>
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem;
+html {
+  scroll-behavior: smooth;
 }
 
-.element {
-  display: flex;
-  max-width: 12.5rem;
-  max-height: 12.5rem;
-}
-
-.image {
-  max-width: 3.5rem;
-  margin: 0.5rem 0.5rem;
-}
-
-.name {
-  font-size: 1.1rem;
-  font-weight: 500;
-  justify-content: center;
-  color: #0e2431;
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 a:link {
@@ -66,10 +50,32 @@ a:link {
   animation: slideInFromLeft 2s ease-in-out;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 17vh;
+}
+
+/* DESKTOP NAV */
+#desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+  cursor: default;
+  margin-right: auto;
+}
+
+/* HAMBURGER MENU */
 .navbar {
   width: 2rem;
   height: 2rem;
-  margin: 0.5rem;
 }
 
 .container {
@@ -81,15 +87,20 @@ a:link {
   list-style: none;
 }
 
+/* TO DO: Fix alignment */
 .navbar .nav-container a {
   display: flex;
-  color: #0e2431;
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 0.5rem;
+  font-size: 2rem;
+  padding-inline: 1rem;
   text-decoration: none;
 }
 
+.navbar .nav-container a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
 .nav-container .checkbox {
   display: none;
 }
@@ -105,18 +116,10 @@ a:link {
   justify-content: center;
 }
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+  }
   .navbar .nav-container a:hover {
     font-weight: bolder;
   }
@@ -172,7 +175,7 @@ a:link {
 
   .navbar .menu-items {
     padding-top: 80px;
-    box-shadow: inset 0 0 125rem rgba(242, 242, 242, 1);
+    box-shadow: inset 0 0 125rem white;
     height: 100vh;
     width: 100%;
     transform: translate(150%);
@@ -186,8 +189,7 @@ a:link {
 
   .navbar .menu-items li {
     margin-bottom: 1.1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2rem;
   }
 
   .nav-container input[type='checkbox']:checked ~ .menu-items {

@@ -1,5 +1,4 @@
 <template>
-  <GeneralHeader />
   <section class="all-container" role="contentinfo">
     <main class="grid">
       <article class="aboutme">
@@ -56,18 +55,11 @@
       </article>
     </main>
   </section>
-  <GeneralFooter />
 </template>
 
 <script>
-import GeneralHeader from '@/components/GeneralHeader.vue'
-import GeneralFooter from '@/components/GeneralFooter.vue'
 export default {
-  name: 'AboutMeView',
-  components: {
-    GeneralHeader,
-    GeneralFooter
-  }
+  name: 'AboutMe'
 }
 </script>
 
@@ -189,7 +181,7 @@ export default {
     font-size: 18px;
   }
   .cv {
-margin-top: -2rem;
+    margin-top: -2rem;
   }
 }
 </style>

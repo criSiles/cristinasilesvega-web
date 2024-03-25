@@ -208,5 +208,8 @@ section {
   .subtitle {
     font-size: 1.25rem;
   }
+  .details-container{
+    flex: 1;
+}
 }
 </style>

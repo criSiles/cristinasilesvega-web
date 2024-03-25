@@ -1,10 +1,10 @@
-# dummy-vue-project
+# cristina-siles-web
 
 ## Project description
 
 ```
 This project is going to be a portfolio, to show everything I can do in terms of Web Frontend development.
-For now, it includes a To Do app.
+For now, it includes a To Do App and a eCommerce.
 
 Work in progress.
 ```
@@ -12,11 +12,15 @@ Work in progress.
 ## Technologies used
 
 ```
+Tailwindcss
 JavaScript
 HTML
 CSS
 Vue
 Pinia
+Docker
+Vite
+Node.js
 ```
 
 ## Project setup
@@ -30,7 +34,7 @@ npm install
 ```
 For the web:
 
-npm run serve
+npm run dev
 
 For the data base:
 

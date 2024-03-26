@@ -1,7 +1,7 @@
 <template>
   <section id="contact">
     <h1 class="title">Contact</h1>
-    <p class="subtitle">Get in Touch</p>
+    <p class="subtitle">Get in touch</p>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img

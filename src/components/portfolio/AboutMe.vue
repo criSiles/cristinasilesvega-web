@@ -33,19 +33,19 @@
           board games, to see tv shows and to read.
         </p>
         <article>
-          <img class="hobbie-img" src="../assets/about/cris_surf.jpg" alt="article img" />
+          <img class="hobbie-img" src="/src/assets/portfolio/cris_surf.jpg" alt="article img" />
           <h3 class="hobbie-title">Surfing</h3>
         </article>
         <article>
-          <img class="hobbie-img" src="../assets/about/cris_fest.jpg" alt="article img" />
+          <img class="hobbie-img" src="/src/assets/portfolio/cris_fest.jpg" alt="article img" />
           <h3 class="hobbie-title">Live Music</h3>
         </article>
         <article>
-          <img class="hobbie-img" src="../assets/about/cris_climber.jpg" alt="article img" />
+          <img class="hobbie-img" src="/src/assets/portfolio/cris_climber.jpg" alt="article img" />
           <h3 class="hobbie-title">Indoor Climbing</h3>
         </article>
         <article>
-          <img class="hobbie-img" src="../assets/about/cris_mountain.jpg" alt="article img" />
+          <img class="hobbie-img" src="/src/assets/portfolio/cris_mountain.jpg" alt="article img" />
           <h3 class="hobbie-title">Hiking</h3>
         </article>
       </article>

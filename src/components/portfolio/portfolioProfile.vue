@@ -68,7 +68,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-  animation: slideInFromLeft 2s ease-in-out;
+  /* animation: slideInFromLeft 2s ease-in-out; */
 }
 
 @keyframes slideInFromLeft {

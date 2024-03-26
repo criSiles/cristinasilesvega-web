@@ -1,7 +1,7 @@
 <template>
   <section id="projects">
     <h1 class="title">Projects</h1>
-    <p class="subtitle">Browse my recent projects</p>
+    <p class="subtitle">Look at my work</p>
     <div class="projects-container">
       <div class="project-conts">
         <!-- TO DO: Make a v-for to display the entire details-container div -->

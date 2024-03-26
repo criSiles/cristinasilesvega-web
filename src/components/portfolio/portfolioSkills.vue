@@ -1,7 +1,7 @@
 <template>
   <section id="skills">
-    <h1 class="title">Skills</h1>
-    <p class="subtitle">Languages, frameworks and tools I know</p>
+    <h1 class="title">Skillset</h1>
+    <p class="subtitle">Check what I know</p>
     <div class="logos-grid">
       <figure class="skill-container" v-for="skill in skills" :key="skill.name">
         <!-- I'm binding a style attribute, that is a computed property, a function that computes the color of the shadow and returns a string with the drop-shadow value  -->

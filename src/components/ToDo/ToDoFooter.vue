@@ -1,6 +1,6 @@
 <template>
   <footer class="to-do-footer">
-    <router-link :to="{ name: 'Home' }">
+    <router-link :to="{ name: 'Portfolio' }">
       <i class="material-icons"> home </i>
       <p class="todo-footer-text">Go back to cristinasilesvega's web</p>
     </router-link>

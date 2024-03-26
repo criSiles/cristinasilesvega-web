@@ -47,7 +47,7 @@ html {
 
 a:link {
   text-decoration: none;
-  animation: slideInFromLeft 2s ease-in-out;
+  /* animation: slideInFromLeft 2s ease-in-out; */
 }
 
 .header-container {
@@ -96,10 +96,9 @@ a:link {
 }
 
 .navbar .nav-container a:hover {
-  color: grey;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: black
 }
 .nav-container .checkbox {
   display: none;
@@ -156,7 +155,7 @@ a:link {
     height: 0.25rem;
     width: 100%;
     border-radius: 0.625rem;
-    background: #0e2431;
+    background: black
   }
 
   .nav-container .hamburger-lines .line1 {
@@ -220,7 +219,7 @@ a:link {
     left: 9.375rem;
     width: 100%;
     height: 100%;
-    background-color: #f2f2f2;
+    background-color: white;
     padding-right: 40px;
     padding-bottom: 40rem;
     z-index: 2;

@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <section class="contact">
     <form class="contact-form" @submit="handleSubmit($event)">
       <label class="contact-label">Email:</label>
       <input
@@ -50,12 +50,12 @@
           <label>Accept terms and conditions</label>
         </div>
 
-        <div class="submit">
+        <div class="btn-color-1">
           <button>Send</button>
         </div>
       </div>
     </form>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -134,24 +134,17 @@ export default {
 </script>
 
 <style scoped>
-* {
-  color: #0e2431;
-}
 .contact {
-  margin-top: -2rem;
-  margin-bottom: 4rem;
-}
-.title {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: -2rem;
+  margin-top: -5rem;
+  margin-bottom: 10rem;
 }
 .contact-form {
   max-width: 40rem;
   margin: 1.8rem auto;
   margin-top: 5rem;
-  background: #e7e7e7;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
   text-align: left;
   padding: 2rem;
   border-radius: 10px;
@@ -160,9 +153,10 @@ export default {
 .contact-label {
   display: inline-block;
   margin: 25px 0 15px;
-  font-size: 1em;
+  font-size: 1.25rem;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 500;
+  color: black;
 }
 
 .contact-input-select {
@@ -170,9 +164,8 @@ export default {
   padding: 0.625rem;
   width: 100%;
   box-sizing: border-box;
-  border: 0;
-  border-radius: 0.375rem;
-  border-bottom: 1px solid #e7e7e7;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 2rem;
   font-size: 1em;
 }
 
@@ -200,20 +193,28 @@ export default {
   box-shadow: none;
 }
 
-.submit button {
-  margin-top: 2rem;
-  border-radius: 0.375rem;
-  border: 4px solid white;
-  font-size: 0.9rem;
-  background-color: white;
-  padding: 0.5rem 1rem;
-}
-.submit button:hover {
-  background-color: #0e2431;
-  color: #e7e7e7;
-  border: 4px solid #0e2431;
+.btn-color-1 {
+  display: flex;
+  justify-content: center;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  background: black;
+  border: black 0.1rem solid;
+  color: white;
+  font-weight: 600;
+  margin: 2rem;
 }
 
+.btn-color-1:hover {
+  cursor: pointer;
+  background: white;
+  border: black 0.1rem solid;
+  color: black;
+}
+
+/* TO DO: Make everything responsive without media queries */
 @media screen and (max-width: 768px) {
   .title {
     display: flex;

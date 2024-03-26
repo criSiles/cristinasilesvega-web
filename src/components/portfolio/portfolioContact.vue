@@ -2,17 +2,17 @@
   <section id="contact">
     <h1 class="title">Contact</h1>
     <p class="subtitle">Get in Touch</p>
-    <ContactForm />
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img
-          src="/src/assets/portfolio/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
+        src="/src/assets/portfolio/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
         />
         <p><a href="mailto:cristina.siles.vega@gmail.com">cristina.siles.vega@gmail.com</a></p>
       </div>
     </div>
+    <ContactForm />
   </section>
 </template>
 <script setup>
@@ -89,4 +89,38 @@ section {
 .email-icon {
   height: 2.5rem;
 }
+
+/* TO DO: Make everything responsive without media queries */
+
+/* @media screen and (max-width: 1400px) {
+  #contact{
+    height: fit-content;
+  }
+} */
+
+/* @media screen and (max-width: 1200px) {
+
+  section{
+    margin: 0 5%;
+  }
+}  */
+
+/* @media screen and (max-width: 600px) {
+
+  .contact-info-upper-container{
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+} */
 </style>

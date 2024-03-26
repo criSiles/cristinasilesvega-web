@@ -111,7 +111,6 @@ section {
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
   text-align: center;
   border-color: rgb(133, 133, 133);
   background: white;

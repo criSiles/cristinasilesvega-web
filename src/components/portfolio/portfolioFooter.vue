@@ -2,7 +2,7 @@
   <footer>
     <nav>
       <div class="nav-links-container">
-        <a href="#about" class="arrow-up">↑</a>
+        <a href="#home" class="arrow-up">↑</a>
       </div>
     </nav>
     <p id="made-with">

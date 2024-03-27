@@ -3,8 +3,8 @@
   <portfolioProfile />
   <portfolioSkills />
   <portfolioProjects />
-  <portfolioContact />   
   <portfolioAbout />
+  <portfolioContact />   
   <portfolioFooter />
 </template>
 <script setup>

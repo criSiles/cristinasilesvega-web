@@ -2,6 +2,7 @@
   <section id="contact">
     <h1 class="title">Contact</h1>
     <p class="subtitle">Get in touch</p>
+    <ContactForm />
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img
@@ -12,7 +13,6 @@
         <p><a href="mailto:cristina.siles.vega@gmail.com">cristina.siles.vega@gmail.com</a></p>
       </div>
     </div>
-    <ContactForm />
   </section>
 </template>
 <script setup>
@@ -42,7 +42,7 @@ section {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  margin-top: 40rem;
+  margin-top: 30rem;
 }
 
 .title {

@@ -1,5 +1,5 @@
 <template>
-  <header id="top" class="header-container">
+  <header id="home" class="header-container">
     <nav id="desktop-nav">
       <router-link :to="{ name: 'Portfolio' }">
         <div class="title">Cristina Siles Vega</div>
@@ -14,15 +14,50 @@
           <span class="line line3"></span>
         </div>
         <div class="menu-items overlay">
+          <!-- ORIGINAL -->
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+          <!-- USING ROUTER, NOT RIGHT -->
+          <!-- <li><router-link to="/skills">Skills</router-link></li>
+          <li><router-link to="/projects">Projects</router-link></li>
+          <li><router-link to="/contact">Contact</router-link></li>
+          <li><router-link to="/about">About</router-link></li> -->
+
+
+          <!-- USING HASH -->
+          <!-- <li><a @click="scrollToSection('skills')">Skills</a></li>
+          <li><a @click="scrollToSection('projects')">Projects</a></li>
+          <li><a @click="scrollToSection('about')">About</a></li>
+          <li><a @click="scrollToSection('contact')">Contact</a></li> -->
         </div>
       </div>
     </nav>
   </header>
 </template>
+<script>
+import { useRouter } from 'vue-router'
+
+export default {
+  setup() {
+    const router = useRouter()
+
+    function scrollToSection(sectionId) {
+      // Update the hash part of the URL to navigate smoothly
+      router.push({ hash: sectionId }).catch((err) => {
+        // Handle any errors if necessary
+        console.error(err)
+      })
+    }
+
+    return {
+      scrollToSection
+    }
+  }
+}
+</script>
 <style scoped>
 * {
   margin: 0;
@@ -98,7 +133,7 @@ a:link {
 .navbar .nav-container a:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
-  text-decoration-color: black
+  text-decoration-color: black;
 }
 .nav-container .checkbox {
   display: none;
@@ -155,7 +190,7 @@ a:link {
     height: 0.25rem;
     width: 100%;
     border-radius: 0.625rem;
-    background: black
+    background: black;
   }
 
   .nav-container .hamburger-lines .line1 {

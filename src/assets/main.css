@@ -1,18 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
 
-@tailwind utilities;
-/* @tailwind base; */
-@tailwind components;
-
+/* tailwindcss/base is breaking my project CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* TODO: Organize CSS*/
 body {
-  background: #f2f2f2;
   margin: 0;
 }
 body * {
   font-family: "Poppins";
 }
+
+
+@layer utilities {
+/* TO DO: Try to put b-1, I have problems with the borderWidth in the tailwind.config.js */
+  .hover-border-2 {
+    @apply hover:border-b-2;
+    @apply hover:border-gray-600;
+  }
+
+
+}
+
 
 
 

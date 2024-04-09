@@ -1,54 +1,60 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
+// ToDo
 import ToDoNotesView from '../views/ToDo/ToDoNotesView.vue'
 import ToDoView from '../views/ToDo/ToDoView.vue'
-import HomeView from '../views/HomeView.vue'
-import ContactView from '../views/ContactView.vue'
-import AboutMeView from '../views/AboutMeView.vue'
-import ProjectsWipView from '../views/ProjectsWipView.vue'
-import ProjectsDisplayView from '../views/ProjectsDisplayView.vue'
+// eShop
+import ShopView from '../views/eshop/ShopView.vue'
+import ProductDetailView from '../views/eshop/ProductDetailView.vue'
+import ProductCategoryView from '../views/eshop/ProductCategoryView.vue'
+// Portfolio
+import PortfolioView from '../views/portfolio/PortfolioView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: HomeView
-  },
-  {
-    path: '/aboutme',
-    name: 'AboutMe',
-    component: AboutMeView
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: ContactView
-  },
-  {
-    path: '/workinprogress',
-    name: 'ProjectsWip',
-    component: ProjectsWipView
-  },
-  {
-    path: '/projects',
-    name: 'ProjectsDisplay',
-    component: ProjectsDisplayView
-  },
-  {
-    path: '/todo',
-    name: 'ToDo',
-    component: ToDoView
-  },
-  {
-    path: '/notes/:id',
-    name: 'ToDoNotesView',
-    component: ToDoNotesView,
-    props: true
-  }
+    {
+      path: '/todo',
+      name: 'ToDo',
+      component: ToDoView
+    },
+    {
+      path: '/todo/notes/:id',
+      name: 'ToDoNotesView',
+      component: ToDoNotesView,
+      props: true
+    },
+    {
+      path: '/shop',
+      name: 'Shop',
+      component: ShopView
+    },
+    {
+      path: '/shop/product/:id',
+      name: 'ProductDetails',
+      component: ProductDetailView
+    },
+    {
+      path: '/shop/:category',
+      name: 'ProductCategory',
+      component: ProductCategoryView
+    },
+    {
+      path: '/',
+      name: 'Portfolio',
+      component: PortfolioView
+    }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
+  history: createWebHashHistory(),
+  routes,
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
+    }
+  } 
 })
+
 export default router

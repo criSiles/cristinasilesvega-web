@@ -1,64 +1,43 @@
 <template>
-    <main>
-        <ToDoHeader/>
-        <!-- New task form-->
-        <div class="new-task-form">
-            <ToDoForm />
-        </div>
-
-        <!-- Task list with details-->
-        <ToDoList :tasks="tasks" :loading="loading" />
-    </main>
+  <main class="to-do-app">
+    <ToDoHeader />
+    <ToDoForm />
+    <ToDoList :tasks="tasks" :loading="loading" />
+    <ToDoFooter class="footer" />
+  </main>
 </template>
 
 <script>
-import ToDoHeader from "@/components/ToDo/ToDoHeader.vue";
-import ToDoList from "@/components/ToDo/ToDoList.vue";
-import ToDoForm from "@/components/ToDo/ToDoForm.vue";
-import { useToDoStore } from "@/stores/ToDoStore";
-import { storeToRefs } from 'pinia';
+import ToDoHeader from '@/components/ToDo/ToDoHeader.vue'
+import ToDoList from '@/components/ToDo/ToDoList.vue'
+import ToDoForm from '@/components/ToDo/ToDoForm.vue'
+import ToDoFooter from '@/components/ToDo/ToDoFooter.vue'
+import { useToDoStore } from '@/stores/ToDoStore'
+import { storeToRefs } from 'pinia'
 
 export default {
-    name: "ToDoView",
-    meta:{
-        hideFooter: true,
-    },
-    components: {
+  name: 'ToDoView',
+  meta: {
+    hideFooter: true
+  },
+  components: {
     ToDoForm,
     ToDoList,
-    ToDoHeader
-},
-    setup() {
-        const todoStore = useToDoStore();
-        const { tasks, loading } = storeToRefs(todoStore);
+    ToDoHeader,
+    ToDoFooter
+  },
+  setup() {
+    const todoStore = useToDoStore()
+    const { tasks, loading } = storeToRefs(todoStore)
 
-        todoStore.fetchTasks();
+    todoStore.fetchTasks()
 
-        return { todoStore, tasks, loading };
-    },
-};
+    return { todoStore, tasks, loading }
+  }
+}
 </script>
 
 <style scoped>
-/* This shouldn't be scoped and be there, I have to improve the CSS */
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-}
-body {
-  background: #f2f2f2;
-  color: #444;
-  margin: 0;
-}
-body * {
-  font-family: "Poppins";
-}
-
-/* loading state */
 .loading {
   max-width: 640px;
   border: 1px solid #ffd859;
@@ -68,9 +47,13 @@ body * {
   text-align: center;
   margin: 30px auto;
 }
-.active {
-  background-color: orange;
-  color: white;
-  border: 2px solid orange;
+
+.to-do-app {
+  background-color: #078080;
+  min-height: 100vh;
+}
+/* TO DO: Fix the footer at the bottom using flex and last child */
+.footer {
+  margin-top: 12.35rem;
 }
 </style>

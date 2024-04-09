@@ -24,6 +24,21 @@ export const useEshopStore = defineStore('eshopStore', {
 
       console.log('Found product:', product)
       return product
+    },
+    // I don't know yet if I'm going to use this
+    getProductByCategory: (state) => (category) => {
+      console.log('All the products:', state.products)
+      console.log('Getting the products with category:', category)
+
+      const products = state.products.filter((p) => p.category === category)
+
+      if (products === undefined) {
+        console.log('The products do not exist')
+        return
+      }
+
+      console.log('Found products:', products)
+      return products
     }
   },
   actions: {
@@ -79,18 +94,20 @@ export const useEshopStore = defineStore('eshopStore', {
 
     updateCart(productCart) {
       const productIndexInCart = this.cart.findIndex(
-        // if cartItem is already in the cart, findIndez will return the index of the product, if nor it will return -1
+        // if cartItem is already in the cart, findIndex will return the index of the product, if nor it will return -1
         (cartItem) =>
           cartItem.id === productCart.id &&
           cartItem.color === productCart.color &&
-          cartItem.size === productCart.size
+          cartItem.size === productCart.size &&
+          cartItem.price === productCart.price &&
+          cartItem.imageSrc === productCart.imageSrc
       )
 
       if (productIndexInCart !== -1) {
         console.log('This product is already in the cart')
         this.cart[productIndexInCart].quantity++
       } else {
-        console.log('This product is not in the cart')
+        console.log('This product is not in the cart',this.cart)
         this.cart.push(productCart)
       }
 

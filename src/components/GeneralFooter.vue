@@ -4,12 +4,12 @@
       <ul>
         <li>
           <a class="hover-target" href="https://www.linkedin.com/in/cristina-siles-vega/"
-            ><i class="fa fa-linkedin"></i
+            ><i class="fab fa-linkedin"></i
           ></a>
         </li>
         <li>
           <a class="hover-target" href="https://github.com/criSiles"
-            ><i class="fa fa-github"></i
+            ><i class="fab fa-github"></i
           ></a>
         </li>
       </ul>

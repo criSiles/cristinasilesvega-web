@@ -15,12 +15,10 @@ body * {
 
 
 @layer utilities {
-
-  .blue-border-2 {
-    @apply border-2;
-    @apply border-solid;
-    @apply border-blue-300;
-    @apply rounded-md;
+/* TO DO: Try to put b-1, I have problems with the borderWidth in the tailwind.config.js */
+  .hover-border-2 {
+    @apply hover:border-b-2;
+    @apply hover:border-gray-600;
   }
 
 

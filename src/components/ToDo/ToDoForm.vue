@@ -1,7 +1,7 @@
 <template>
-  <form @submit.prevent="handleSubmit">
-    <input type="text" placeholder="Add a to do" v-model="newTask" />
-    <button type="submit">Add</button>
+  <form class="add-task" @submit.prevent="handleSubmit">
+    <input class="add-task-input" type="text" placeholder="Add a to do" v-model="newTask" />
+    <button class="add-button" type="submit">Add</button>
   </form>
 </template>
 
@@ -34,43 +34,41 @@ export default {
 };
 </script>
 
-<style scoped>
-form {
+<style>
+.add-task {
   max-width: 40rem;
-  margin: 1.25rem auto; /* Responsive measurement */
-  margin-top: 5rem;
-
+  margin: 1.25rem auto; 
   display: grid;
-  grid-template-columns: 3fr 1fr; /* Adjusted grid-template-columns ratio */
-  gap: 1rem; /* You can use rem for better scalability on different devices */
-  padding: 1rem; /* Add some padding to the form */
-  margin-top: 5.5rem;
+  grid-template-columns: 3fr 1fr; 
+  gap: 1rem;
+  padding: 1rem; 
+  margin-top: 2rem;
   padding-bottom: 0.4rem;
 }
 
-form button {
-  background: orange;
+/* TO DO: Delete the default blue box shadow when the input is clicked */
+.add-task-input {
+  padding: 0.625rem; 
+  border-radius: 0.375rem; 
+  color: #555;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.add-button {
+  background: #ff8e3c;
   border: 0;
-  padding: 0.625rem; /* Responsive measurement */
-  font-family: "Poppins";
-  border-radius: 0.375rem; /* Responsive measurement */
+  padding: 0.625rem; 
+  border-radius: 0.375rem;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1rem;
   color: white;
   transition: background-color 0.3s, color 0.3s;
 }
 
-form button:hover {
-  background-color: #fff;
-  color: orange;
-}
-
-form input {
-  border: 0;
-  padding: 0.625rem; /* Responsive measurement */
-  border-radius: 0.375rem; /* Responsive measurement */
-  color: #555;
-  font-size: 1em;
-  width: 100%; /* Make the input take the full width of the container */
+.add-button:hover {
+  background-color: #abd1c6;
+  color: white;
 }
 </style>

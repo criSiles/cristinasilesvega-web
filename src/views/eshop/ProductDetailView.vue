@@ -1,38 +1,35 @@
 <template>
   <ShopHeader />
-  <ProductDisplay
+  <ProductDetails
     :product="product"
-    :premium="premium"
   />
   <ReviewList v-if="product" :product="product" />
-  <ReviewForm :id="product.id" />
+  <ShopFooter/>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useEshopStore } from '@/stores/EshopStore'
 
-import ProductDisplay from '@/components/eshop/ProductDisplay.vue'
+import ProductDetails from '@/components/eshop/ProductDetails.vue'
 import ShopHeader from '@/components/eshop/ShopHeader.vue'
 import ReviewList from '@/components/eshop/ReviewList.vue'
-import ReviewForm from '@/components/eshop/ReviewForm.vue'
+import ShopFooter from '@/components/eshop/ShopFooter.vue'
+
 
 const eshopStore = useEshopStore()
 
-const premium = ref(true)
-
 const route = useRoute()
-const id = parseInt(route.params.id)
+let id = parseInt(route.params.id)
 
 eshopStore.fetchProducts()
 
-const product = computed(() => {
+let product = computed(() => {
   if (eshopStore.loading === false) {
     return eshopStore.getProductById(id)
   } else {
     return null
   }
 })
-
 </script>

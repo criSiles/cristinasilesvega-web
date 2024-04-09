@@ -1,37 +1,38 @@
 <template>
   <div
-    class="fixed top-0 left-0 z-10 w-full h-full bg-blue-200 bg-opacity-50 flex items-center justify-center"
+    class="fixed top-0 left-0 z-10 w-full h-full bg-gray-200 bg-opacity-50 flex items-center justify-center text-gray-950"
   >
     <div
-      class="bg-white text-black relative w-2/5 p-8 rounded-lg shadow-md shadow-gray-500 inline-block"
+      class="bg-white text-gray-950 relative p-4 rounded-lg shadow-md inline-block sm:w-full sm:p-4 md:w-2/5"
       style="width: auto"
     >
       <div
-        class="absolute h-12 w-12 flex justify-center align-middle t-0 right-0 text-4xl text-gray-400 cursor-pointer"
+        class="absolute h-8 w-8 flex justify-center items-center top-0 right-0 text-xl mr-2 text-gray-400 cursor-pointer"
         @click="close"
       >
         &times;
       </div>
-      <h1>Size Guide</h1>
+      <h1 class="sm:text-lg text-base font-semibold">Size Guide</h1>
+      <h1 class="sm:text-sm text-xs font-light mb-4">(cm)</h1>
       <div class="overflow-x-auto">
-        <table class="table-auto w-full ">
+        <table class="table-auto w-full">
           <thead>
             <tr>
-              <th class="px-4 py-2">SIZE</th>
-              <th class="px-4 py-2">SIZE (EU)</th>
-              <th class="px-4 py-2">WAIST (cm)</th>
-              <th class="px-4 py-2">HIPS (cm)</th>
-              <th class="px-4 py-2">CHEST (cm)</th>
+              <th class="px-2 sm:px-4 py-2 sm:text-base text-sm font-semibold">Size</th>
+              <th class="px-2 sm:px-8 py-2 sm:text-base text-sm font-semibold">EU</th>
+              <th class="px-2 sm:px-8 py-2 sm:text-base text-sm font-semibold">Waist</th>
+              <th class="px-2 sm:px-8 py-2 sm:text-base text-sm font-semibold">Hips</th>
+              <th class="px-2 sm:px-8 py-2 sm:text-base text-sm font-semibold">Chest</th>
             </tr>
           </thead>
           <tbody>
             <template :key="index" v-for="(size, index) in sizes">
-              <tr>
-                <td class="px-4 py-2">{{ size }}</td>
-                <td class="px-4 py-2">{{ euSizes[index] }}</td>
-                <td class="px-4 py-2">{{ waistSizes[index] }}</td>
-                <td class="px-4 py-2">{{ hipsSizes[index] }}</td>
-                <td class="px-4 py-2">{{ chestSizes[index] }}</td>
+              <tr class="sm:text-base text-sm font-light">
+                <td class="px-2 py-2">{{ size }}</td>
+                <td class="px-2 py-2">{{ euSizes[index] }}</td>
+                <td class="px-2 py-2">{{ waistSizes[index] }}</td>
+                <td class="px-2 py-2">{{ hipsSizes[index] }}</td>
+                <td class="px-2 py-2">{{ chestSizes[index] }}</td>
               </tr>
             </template>
           </tbody>
@@ -42,7 +43,6 @@
 </template>
 
 <script setup>
-import { defineEmits } from 'vue'
 const sizes = ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL']
 const euSizes = ['32', '34-36', '38-40', '42-44', '46-48', '50-52', '54-56']
 const waistSizes = [

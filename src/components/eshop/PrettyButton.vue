@@ -12,10 +12,10 @@ const emit = defineEmits(['click'])
 
 <template>
   <button 
-    class="w-40 h-12 m-8 p-2 text-medium leading-none text-white text-center" 
+    class="w-52 h-12 m-8 p-2 text-medium leading-none text-center" 
     :class="isActive ? 
-      ['bg-black',  'border-black', 'cursor-pointer',  'hover:bg-white', 'hover:text-black'] : 
-      ['bg-gray-100', 'border-gray-100', 'cursor-not-allowed']" 
+      ['bg-gray-950',  'text-white',  'border-gray-950', 'cursor-pointer',  'hover:bg-white', 'hover:border', 'hover:border-gray-950','hover:text-gray-950'] : 
+      ['cursor-not-allowed bg-gray-100 text-gray-300 border-gray-100']" 
     :disabled="!isActive"
     @click="emit('click')"
   >

@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import deafultData from '../../data/productsdb.json'
+import deafultData from '../../data/productsDb.json'
 
 export const useEshopStore = defineStore('eshopStore', {
   state: () => ({

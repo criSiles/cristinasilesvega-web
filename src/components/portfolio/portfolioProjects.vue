@@ -41,17 +41,17 @@
       <!-- TODO: Why in mobile the third project is larger and the buttons get different -->
       <div class="details-container">
         <div class="img-container">
-          <img src="/src/assets/portfolio/wip.jpg" alt="Project 3" class="project-img" />
+          <img src="/src/assets/portfolio/delaporte.jpg" alt="Project 3" class="project-img" />
         </div>
-        <h2 class="project-title">Dashboard</h2>
+        <h2 class="project-title">Band Web</h2>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="location.href='https://github.com/criSiles/cristinasilesvega-web'"
+            onclick="location.href='https://github.com/criSiles/delaporte'"
           >
             Github
           </button>
-          <button class="btn btn-color-2" onclick="location.href='https://github.com/'">
+          <button class="btn btn-color-2" onclick="location.href='https://delaporte-cccb5.web.app/'">
             Live Demo
           </button>
         </div>

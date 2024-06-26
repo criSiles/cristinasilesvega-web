@@ -12,8 +12,8 @@
         :linkedinProfile="linkedinProfile"
         :githubProfile="githubProfile"
       />
-      <portfolioSkills />
       <portfolioProjects />
+      <portfolioSkills />
       <portfolioAbout
         :professionalText="professionalText"
         :personalText="personalText"
@@ -25,7 +25,7 @@
       <portfolioContact :mail="mail" />
     </div>
     <div class="page-footer">
-      <portfolioFooter :profileName="profileName"/>
+      <portfolioFooter :profileName="profileName" />
     </div>
   </div>
 </template>
@@ -112,7 +112,7 @@ const mail = ref('cristina.siles.vega@gmail.com')
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-   /* animation: slideInFromLeft 1.5s ease-in-out; */
+  /* animation: slideInFromLeft 1.5s ease-in-out; */
 }
 
 @keyframes slideInFromLeft {

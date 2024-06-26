@@ -67,7 +67,6 @@
 }
 
 #projects {
-  padding-top: 1rem;
   margin-bottom: 6rem;
   margin-inline: 3rem;
   height: fit-content;

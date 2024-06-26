@@ -13,6 +13,28 @@ body * {
   font-family: "Poppins";
 }
 
+/* Styling the scrollbar */
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+/* Styling the scrollbar track */
+body::-webkit-scrollbar-track {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+/* Styling the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: black;
+}
+
+/* Add a hover effect to the scrollbar thumb */
+body::-webkit-scrollbar-thumb:hover {
+  background: turquoise;
+}
+
 
 @layer utilities {
 /* TO DO: Try to put b-1, I have problems with the borderWidth in the tailwind.config.js */

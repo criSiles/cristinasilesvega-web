@@ -9,8 +9,8 @@
           id="menu-items"
           :style="{ transform: !isCheckboxChecked ? 'translateX(0)' : 'translateX(-140%)' }"
         >
+        <li><router-link :to="{ path: '/', hash: '#projects' }">Projects</router-link></li>
           <li><router-link :to="{ path: '/', hash: '#skills' }">Skills</router-link></li>
-          <li><router-link :to="{ path: '/', hash: '#projects' }">Projects</router-link></li>
           <li><router-link :to="{ path: '/', hash: '#about' }">About</router-link></li>
           <li><router-link :to="{ path: '/', hash: '#contact' }">Contact</router-link></li>
         </ul>

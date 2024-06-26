@@ -48,7 +48,8 @@ let name = props.profileName
   height: 2rem;
   position: fixed; 
   right: 20px; 
-  bottom: 32px; }
+  bottom: 32px; 
+}
 
 @media screen and (max-width: 768px) {
   #portfolioFooter {
@@ -58,5 +59,12 @@ let name = props.profileName
   #made-with {
     margin-top: 1rem;
   }
+
+  .arrow {
+  right: 0; 
+  bottom: 0; 
+  position: relative;
+ }
+
 }
 </style>

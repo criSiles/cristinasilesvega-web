@@ -101,7 +101,7 @@ export default {
     box-shadow: inset 0 0 125rem white;
     height: 100vh;
     width: 100%;
-    padding-top: 15rem;
+    padding-top: 5rem;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -111,10 +111,11 @@ export default {
     top: 0rem;
     left: 140vw;
     z-index: 2;
+    gap: 1rem;
   }
 
   #menu-items li:hover {
-    font-weight: bold;
+    font-weight:600;
     text-decoration: none;
   }
 

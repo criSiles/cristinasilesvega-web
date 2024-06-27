@@ -1,7 +1,7 @@
 <template>
   <section id="profile">
     <div class="profile-img">
-      <img :src="profileImg" alt="{{ profileName }} profile picture" />
+      <img :src="profileImg" alt="{{ profileName }} profile picture" loading="lazy" />
     </div>
     <div class="greeting-container">
       <p class="greeting">Hi all, it's me</p>

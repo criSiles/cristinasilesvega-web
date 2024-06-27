@@ -125,16 +125,4 @@ const mail = ref('cristina.siles.vega@gmail.com')
     opacity: 1;
   }
 }
-
-/* .page-header {
-  margin-bottom: 20px;
-}
-
-.page-content {
-  margin-bottom: 20px;
-}
-
-.page-footer {
-  margin-top: 20px;
-} */
 </style>

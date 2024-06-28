@@ -80,7 +80,7 @@
 
                                 <div class="flex">
                                   <button
-                                    @click="removeProduct(product.id)"
+                                    @click="removeProduct(product.id, product.color, product.size)"
                                     type="button"
                                     class="font-medium text-gray-400 hover:text-gray-600"
                                   >
@@ -159,7 +159,8 @@ const totalCost = computed(() => {
 
 const getImagePath = (imageSrc) => `/eshop/${imageSrc}`
 
-const removeProduct = (productId) => {
-  eshopStore.removeFromCart(productId)
+const removeProduct = (productId, color, size) => {
+  eshopStore.removeFromCart(productId, color, size)
+  console.log('Product selected to remove', productId, color, size)
 }
 </script>

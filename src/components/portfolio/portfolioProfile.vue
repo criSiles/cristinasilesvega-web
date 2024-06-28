@@ -72,6 +72,7 @@ export default {
   color: black;
 }
 #profile {
+  margin-top: 1rem;
   margin-bottom: 6rem;
   height: fit-content;
   min-height: 80vh;

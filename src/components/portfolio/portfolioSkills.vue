@@ -86,6 +86,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .title {
@@ -138,7 +139,7 @@ export default {
   .single-skill {
     max-width: 8rem;
   }
-  #skills{
+  #skills {
     margin-bottom: 6rem;
   }
 }

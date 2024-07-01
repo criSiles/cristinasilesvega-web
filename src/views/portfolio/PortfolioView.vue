@@ -40,7 +40,7 @@ import portfolioContact from '@/components/portfolio/portfolioContact.vue'
 import portfolioFooter from '@/components/portfolio/portfolioFooter.vue'
 
 import { ref } from 'vue'
-import profileImgPath from '/portfolio/circleCris.png'
+import profileImgPath from '/portfolio/circleCris.avif'
 import curriculumPath from '/portfolio/CSV_CV_2024.pdf'
 
 // Header props
@@ -97,9 +97,9 @@ const personalText = ref(`<p>
             </p>
             <br />
             <p>These images capture just a few moments of my many passions:</p>`)
-import hobbieImg1 from '/portfolio/cris_mountain.jpg'
-import hobbieImg2 from '/portfolio/cris_surf.jpg'
-import hobbieImg3 from '/portfolio/cris_fest.jpg'
+import hobbieImg1 from '/portfolio/cris_mountain.avif'
+import hobbieImg2 from '/portfolio/cris_surf.avif'
+import hobbieImg3 from '/portfolio/cris_fest.avif'
 
 // Contact props
 const mail = ref('cristina.siles.vega@gmail.com')

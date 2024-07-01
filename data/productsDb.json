@@ -10,7 +10,7 @@
       "colors": [
         {
           "color": "black",
-          "imageSrc": "blackFrontWoman.jpg",
+          "imageSrc": "blackFrontWoman.avif",
           "imageAlt": "Black tank top and cycling leggins for gym",
           "sizes": [
             {
@@ -37,7 +37,7 @@
         },
         {
           "color": "palevioletred",
-          "imageSrc": "pinkFrontWoman.jpg",
+          "imageSrc": "pinkFrontWoman.avif",
           "imageAlt": "Pink tank top and cycling leggins for gym",
           "sizes": [
             {
@@ -68,7 +68,7 @@
         },
         {
           "color": "sienna",
-          "imageSrc": "brownFrontWoman.jpg",
+          "imageSrc": "brownFrontWoman.avif",
           "imageAlt": "Brown tank top and cycling leggins for gym",
           "sizes": [
             {
@@ -95,7 +95,7 @@
         },
         {
           "color": "steelblue",
-          "imageSrc": "blueFrontWoman.jpg",
+          "imageSrc": "blueFrontWoman.avif",
           "imageAlt": "Blue tank top and cycling leggins for gym",
           "sizes": [
             {
@@ -130,7 +130,7 @@
         },
         {
           "color": "darkgreen",
-          "imageSrc": "greenFrontWoman.jpg",
+          "imageSrc": "greenFrontWoman.avif",
           "imageAlt": "Green tank top and cycling leggins for gym",
           "quantity": 8,
           "sizes": [
@@ -205,7 +205,7 @@
       "colors": [
         {
           "color": "black",
-          "imageSrc": "black_cup.jpg",
+          "imageSrc": "black_cup.avif",
           "imageAlt": "Reusable cup in black color.",
           "sizes": [
             {
@@ -216,7 +216,7 @@
         },
         {
           "color": "darkorange",
-          "imageSrc": "orange_cup.jpg",
+          "imageSrc": "orange_cup.avif",
           "imageAlt": "Reusable cup in orange color.",
           "sizes": [
             {
@@ -227,7 +227,7 @@
         },
         {
           "color": "ghostwhite",
-          "imageSrc": "white_cup.jpg",
+          "imageSrc": "white_cup.avif",
           "imageAlt": "Reusable cup in white color.",
           "sizes": [
             {
@@ -238,7 +238,7 @@
         },
         {
           "color": "darkseagreen",
-          "imageSrc": "green_cup.jpg",
+          "imageSrc": "green_cup.avif",
           "imageAlt": "Reusable cup in green color.",
           "sizes": [
             {
@@ -286,7 +286,7 @@
       "colors": [
         {
           "color": "Blue",
-          "imageSrc": "blue_mat_hands.jpg",
+          "imageSrc": "blue_mat_hands.avif",
           "imageAlt": "Comfy blue pilates mat.",
           "sizes": [
             {
@@ -321,7 +321,7 @@
       "colors": [
         {
           "color": "Black",
-          "imageSrc": "black_mat_hands.jpg",
+          "imageSrc": "black_mat_hands.avif",
           "imageAlt": "Comfy black yoga mat.",
           "sizes": [
             {
@@ -359,7 +359,7 @@
       "colors": [
         {
           "color": "navy",
-          "imageSrc": "dark_blue_scrunchy.jpg",
+          "imageSrc": "dark_blue_scrunchy.avif",
           "imageAlt": "Cute bright dark blue scrunchy.",
           "sizes": [
             {
@@ -370,7 +370,7 @@
         },
         {
           "color": "silver",
-          "imageSrc": "silver_scrunchy.jpg",
+          "imageSrc": "silver_scrunchy.avif",
           "imageAlt": "Cute bright silver scrunchy.",
           "sizes": [
             {
@@ -381,7 +381,7 @@
         },
         {
           "color": "salmon",
-          "imageSrc": "salmon_scrunchy.jpg",
+          "imageSrc": "salmon_scrunchy.avif",
           "imageAlt": "Cute bright salmon scrunchy.",
           "sizes": [
             {
@@ -392,7 +392,7 @@
         },
         {
           "color": "pink",
-          "imageSrc": "pink_scrunchy.jpg",
+          "imageSrc": "pink_scrunchy.avif",
           "imageAlt": "Cute bright pink scrunchy.",
           "sizes": [
             {
@@ -403,7 +403,7 @@
         },
         {
           "color": "darkred",
-          "imageSrc": "dark_red_scrunchy.jpg",
+          "imageSrc": "dark_red_scrunchy.avif",
           "imageAlt": "Cute bright dark red scrunchy.",
           "sizes": [
             {

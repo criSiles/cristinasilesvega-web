@@ -18,7 +18,7 @@
     </p>
     <nav>
       <router-link :to="{ path: '/', hash: '#home' }">
-        <img src="/src/assets/portfolio/arrow.png" alt="Arrow icon" class="arrow"
+        <img src="/src/assets/portfolio/arrow.avif" alt="Arrow icon" class="arrow"
       /></router-link>
     </nav>
   </footer>

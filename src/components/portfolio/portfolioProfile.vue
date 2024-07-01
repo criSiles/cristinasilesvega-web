@@ -22,13 +22,13 @@
       </div>
       <div id="socials-container">
         <img
-          src="/src/assets/portfolio/linkedin.png"
+          src="/src/assets/portfolio/linkedin.avif"
           alt="My LinkedIn profile"
           class="icon"
           @click="navigateToLinkedIn"
         />
         <img
-          src="/src/assets/portfolio/github.png"
+          src="/src/assets/portfolio/github.avif"
           alt="My Github profile"
           class="icon"
           @click="navigateToGithub"

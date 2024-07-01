@@ -1,7 +1,13 @@
 <template>
   <section id="profile">
     <div class="profile-img">
-      <img :src="profileImg" alt="{{ profileName }} profile picture" loading="lazy" />
+      <img
+        :src="defaultImgSrc"
+        :srcset="srcset"
+        :sizes="sizes"
+        :alt="`${profileName} profile picture`"
+        loading="lazy"
+      />
     </div>
     <div class="greeting-container">
       <p class="greeting">Hi all, it's me</p>
@@ -10,10 +16,7 @@
       </h1>
       <p class="role">{{ role }}</p>
       <div class="btn-container">
-        <button
-          class="btn btn-color-1"
-          onclick="window.open('/portfolio/CSV_CV_2024.pdf')"
-        >
+        <button class="btn btn-color-1" onclick="window.open('/portfolio/CSV_CV_2024.pdf')">
           Download CV
         </button>
         <router-link :to="{ path: '/', hash: '#contact' }">
@@ -41,12 +44,23 @@
 import JSConfetti from 'js-confetti'
 export default {
   props: {
-    profileImg: String,
     profileName: String,
     role: String,
     curriculum: String,
     linkedinProfile: String,
     githubProfile: String
+  },
+   computed: {
+    defaultImgSrc() {
+      return `/portfolio/circleCris-500x500.avif`;
+    },
+    srcset() {
+      return `/portfolio/circleCris-500x500.avif 500w, 
+              /portfolio/circleCris-300x300.avif 300w`;
+    },
+    sizes() {
+      return `(max-width: 600px) 300px, (max-width: 1200px) 500px`;
+    }
   },
   methods: {
     addConfetti() {

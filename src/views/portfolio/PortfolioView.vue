@@ -5,7 +5,6 @@
     </div>
     <div class="page-content">
       <portfolioProfile
-        :profileImg="profileImg"
         :profileName="profileName"
         :role="role"
         :curriculum="curriculum"
@@ -40,14 +39,12 @@ import portfolioContact from '@/components/portfolio/portfolioContact.vue'
 import portfolioFooter from '@/components/portfolio/portfolioFooter.vue'
 
 import { ref } from 'vue'
-import profileImgPath from '/portfolio/circleCris.avif'
 import curriculumPath from '/portfolio/CSV_CV_2024.pdf'
 
 // Header props
 const title = ref("Cristina's Home")
 
 // Profile props
-const profileImg = ref(profileImgPath)
 const profileName = ref('Cristina Siles')
 const role = ref('Frontend Developer')
 const curriculum = ref(curriculumPath)

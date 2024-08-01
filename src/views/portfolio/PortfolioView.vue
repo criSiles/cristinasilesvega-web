@@ -41,8 +41,7 @@ import portfolioFooter from '@/components/portfolio/portfolioFooter.vue'
 
 import { ref } from 'vue'
 import profileImgPath from '/portfolio/circleCris.png'
-import curriculumPath from '/portfolio/CSV_CV_2024.pdf'
-
+import curriculumPath from '/portfolio/CristinaSilesFrontend_EN.pdf'
 // Header props
 const title = ref("Cristina's Home")
 

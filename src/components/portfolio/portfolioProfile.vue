@@ -12,7 +12,7 @@
       <div class="btn-container">
         <button
           class="btn btn-color-1"
-          onclick="window.open('/portfolio/CSV_CV_2024.pdf')"
+          @click="navigateToCurriculum"
         >
           Download CV
         </button>

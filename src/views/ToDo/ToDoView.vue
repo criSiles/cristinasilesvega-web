@@ -51,9 +51,15 @@ export default {
 .to-do-app {
   background-color: #078080;
   min-height: 100vh;
+  position: relative; 
+  padding-bottom: 100px;
 }
-/* TO DO: Fix the footer at the bottom using flex and last child */
+
 .footer {
-  margin-top: 12.35rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Adjust height as needed */
+  height: 100px; /* Example height */
 }
 </style>

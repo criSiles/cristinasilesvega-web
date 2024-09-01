@@ -9,8 +9,8 @@
           id="menu-items"
           :style="{ transform: !isCheckboxChecked ? 'translateX(0)' : 'translateX(-140%)' }"
         >
+        <li><router-link :to="{ path: '/', hash: '#projects' }">Projects</router-link></li>
           <li><router-link :to="{ path: '/', hash: '#skills' }">Skills</router-link></li>
-          <li><router-link :to="{ path: '/', hash: '#projects' }">Projects</router-link></li>
           <li><router-link :to="{ path: '/', hash: '#about' }">About</router-link></li>
           <li><router-link :to="{ path: '/', hash: '#contact' }">Contact</router-link></li>
         </ul>
@@ -101,7 +101,7 @@ export default {
     box-shadow: inset 0 0 125rem white;
     height: 100vh;
     width: 100%;
-    padding-top: 15rem;
+    padding-top: 5rem;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -111,10 +111,11 @@ export default {
     top: 0rem;
     left: 140vw;
     z-index: 2;
+    gap: 1rem;
   }
 
   #menu-items li:hover {
-    font-weight: bold;
+    font-weight:600;
     text-decoration: none;
   }
 

@@ -1,7 +1,7 @@
 <template>
   <footer id="portfolioFooter">
     <div></div>
-        <p id="made-with">
+    <p id="made-with">
       Made with
       <svg
         viewBox="0 0 1792 1792"
@@ -16,9 +16,9 @@
       </svg>
       by {{ name }}
     </p>
-<nav>
+    <nav>
       <router-link :to="{ path: '/', hash: '#home' }">
-        <img src="/src/assets/portfolio/arrow.png" alt="Arrow icon" class="arrow"
+        <img src="/src/assets/portfolio/arrow.avif" alt="Arrow icon" class="arrow"
       /></router-link>
     </nav>
   </footer>
@@ -34,7 +34,7 @@ let name = props.profileName
 #portfolioFooter {
   gap: 0.5rem;
   padding: 1rem;
-display: flex;
+  display: flex;
   justify-content: space-between;
 }
 #made-with {
@@ -46,6 +46,9 @@ display: flex;
 .arrow {
   cursor: pointer;
   height: 2rem;
+  position: fixed; 
+  right: 20px; 
+  bottom: 32px; 
 }
 
 @media screen and (max-width: 768px) {
@@ -56,5 +59,12 @@ display: flex;
   #made-with {
     margin-top: 1rem;
   }
+
+  .arrow {
+  right: 0; 
+  bottom: 0; 
+  position: relative;
+ }
+
 }
 </style>

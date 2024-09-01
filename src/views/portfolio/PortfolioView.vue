@@ -5,15 +5,13 @@
     </div>
     <div class="page-content">
       <portfolioProfile
-        :profileImg="profileImg"
         :profileName="profileName"
         :role="role"
-        :curriculum="curriculum"
         :linkedinProfile="linkedinProfile"
         :githubProfile="githubProfile"
       />
-      <portfolioSkills />
       <portfolioProjects />
+      <portfolioSkills />
       <portfolioAbout
         :professionalText="professionalText"
         :personalText="personalText"
@@ -25,7 +23,7 @@
       <portfolioContact :mail="mail" />
     </div>
     <div class="page-footer">
-      <portfolioFooter :profileName="profileName"/>
+      <portfolioFooter :profileName="profileName" />
     </div>
   </div>
 </template>
@@ -40,16 +38,14 @@ import portfolioContact from '@/components/portfolio/portfolioContact.vue'
 import portfolioFooter from '@/components/portfolio/portfolioFooter.vue'
 
 import { ref } from 'vue'
-import profileImgPath from '/portfolio/circleCris.png'
-import curriculumPath from '/portfolio/CristinaSilesFrontend_EN.pdf'
+
+
 // Header props
 const title = ref("Cristina's Home")
 
 // Profile props
-const profileImg = ref(profileImgPath)
 const profileName = ref('Cristina Siles')
-const role = ref('Frontend Developer')
-const curriculum = ref(curriculumPath)
+const role = ref('Jr Fullstack Developer')
 const linkedinProfile = ref('https://www.linkedin.com/in/cristina-siles-vega/')
 const githubProfile = ref('https://github.com/criSiles')
 
@@ -96,9 +92,9 @@ const personalText = ref(`<p>
             </p>
             <br />
             <p>These images capture just a few moments of my many passions:</p>`)
-import hobbieImg1 from '/portfolio/cris_mountain.jpg'
-import hobbieImg2 from '/portfolio/cris_surf.jpg'
-import hobbieImg3 from '/portfolio/cris_fest.jpg'
+import hobbieImg1 from '/portfolio/cris_mountain.avif'
+import hobbieImg2 from '/portfolio/cris_surf.avif'
+import hobbieImg3 from '/portfolio/cris_fest.avif'
 
 // Contact props
 const mail = ref('cristina.siles.vega@gmail.com')
@@ -111,7 +107,7 @@ const mail = ref('cristina.siles.vega@gmail.com')
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-   /* animation: slideInFromLeft 1.5s ease-in-out; */
+  /* animation: slideInFromLeft 1.5s ease-in-out; */
 }
 
 @keyframes slideInFromLeft {
@@ -124,16 +120,4 @@ const mail = ref('cristina.siles.vega@gmail.com')
     opacity: 1;
   }
 }
-
-/* .page-header {
-  margin-bottom: 20px;
-}
-
-.page-content {
-  margin-bottom: 20px;
-}
-
-.page-footer {
-  margin-top: 20px;
-} */
 </style>

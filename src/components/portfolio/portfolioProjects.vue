@@ -6,7 +6,7 @@
       <!-- TODO: Make a v-for to display the entire details-container div -->
       <div class="details-container">
         <div class="img-container">
-          <img src="/src/assets/portfolio/todo.jpg" alt="Project 1" class="project-img" />
+          <img src="/src/assets/portfolio/todo.avif" alt="Project 1" class="project-img" />
         </div>
         <h2 class="project-title">To Do App</h2>
         <div class="btn-container">
@@ -23,7 +23,7 @@
       </div>
       <div class="details-container">
         <div class="img-container">
-          <img src="/src/assets/portfolio/eshop.jpg" alt="Project 2" class="project-img" />
+          <img src="/src/assets/portfolio/eshop.avif" alt="Project 2" class="project-img" />
         </div>
         <h2 class="project-title">eCommerce</h2>
         <div class="btn-container">
@@ -41,7 +41,7 @@
       <!-- TODO: Why in mobile the third project is larger and the buttons get different -->
       <div class="details-container">
         <div class="img-container">
-          <img src="/src/assets/portfolio/delaporte.jpg" alt="Project 3" class="project-img" />
+          <img src="/src/assets/portfolio/delaporte.avif" alt="Project 3" class="project-img" />
         </div>
         <h2 class="project-title">Band Web</h2>
         <div class="btn-container">
@@ -67,7 +67,6 @@
 }
 
 #projects {
-  padding-top: 1rem;
   margin-bottom: 6rem;
   margin-inline: 3rem;
   height: fit-content;

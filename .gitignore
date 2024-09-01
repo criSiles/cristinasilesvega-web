@@ -133,3 +133,6 @@ typings/
 
 #testing
 /coverage
+
+# env
+.env

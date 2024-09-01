@@ -5,14 +5,14 @@
     <div class="about-container">
       <article class="details-container">
         <div class="about-title">
-          <img src="/src/assets/portfolio/experience.png" alt="Experience icon" class="icon" />
+          <img src="/src/assets/portfolio/experience.avif" alt="Experience icon" class="icon" />
           <h3>Professional life</h3>
         </div>
         <div class="about-text" v-html="professionalText"></div>
       </article>
       <article class="details-container">
         <div class="about-title">
-          <img src="/src/assets/portfolio/education.png" alt="Education icon" class="icon" />
+          <img src="/src/assets/portfolio/education.avif" alt="Education icon" class="icon" />
           <h3>Personal life</h3>
         </div>
         <div class="about-text" v-html="personalText"></div>
@@ -45,7 +45,6 @@ export default {
 }
 
 #about {
-  padding-top: 1rem;
   margin-bottom: 6rem;
   margin-inline: 3rem;
   height: fit-content;

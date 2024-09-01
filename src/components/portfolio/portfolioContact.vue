@@ -4,7 +4,7 @@
     <p class="subtitle">Get in touch</p>
     <ContactForm />
     <div class="contact-info-container">
-      <img src="/src/assets/portfolio/email.png" alt="Email icon" class="email-icon" />
+      <img src="/src/assets/portfolio/email.avif" alt="Email icon" class="email-icon" />
       <p class="mail">
         <a href="mailto:{{ mail }}">{{ mail }}</a>
       </p>
@@ -30,7 +30,6 @@ let mail = props.mail
 }
 
 #contact {
-  padding-top: 1rem;
   margin-bottom: 6rem;
   margin-inline: 3rem;
   height: fit-content;

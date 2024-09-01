@@ -104,10 +104,8 @@ export const useEshopStore = defineStore('eshopStore', {
       )
 
       if (productIndexInCart !== -1) {
-        console.log('This product is already in the cart')
         this.cart[productIndexInCart].quantity++
       } else {
-        console.log('This product is not in the cart',this.cart)
         this.cart.push(productCart)
       }
 
@@ -115,9 +113,24 @@ export const useEshopStore = defineStore('eshopStore', {
       console.log('This is the cart', this.cart)
     },
 
-    removeFromCart(product) {
-      const index = this.cart.indexOf(product)
-      this.cart.splice(index, 1)
-    }
+removeFromCart(productId, color, size) {
+  console.log('Cart contents:', this.cart)
+
+  const index = this.cart.findIndex((product) => {
+    const isProductIdMatch = product.id === productId
+    const isColorMatch = product.color === color
+    const isSizeMatch = product.size === size
+
+    return isProductIdMatch && isColorMatch && isSizeMatch
+  })
+
+  if (index === -1) {
+    console.log('Product not found in the cart:', productId, color, size)
+  } else {
+    this.cart.splice(index, 1)
+    localStorage.setItem('cartProducts', JSON.stringify(this.cart))
+    console.log('Product removed from cart:', productId, color, size)
+  }
+}
   }
 })

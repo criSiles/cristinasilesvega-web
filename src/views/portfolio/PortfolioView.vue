@@ -5,7 +5,6 @@
     </div>
     <div class="page-content">
       <portfolioProfile
-      :profileImgPath="profileImgPath"
         :profileName="profileName"
         :role="role"
         :linkedinProfile="linkedinProfile"
@@ -39,7 +38,6 @@ import portfolioContact from '@/components/portfolio/portfolioContact.vue'
 import portfolioFooter from '@/components/portfolio/portfolioFooter.vue'
 
 import { ref } from 'vue'
-import profileImgPath from '/portfolio/circleCris.avif'
 
 
 // Header props

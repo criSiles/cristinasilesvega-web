@@ -22,6 +22,7 @@
               class="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 xl:aspect-h-8 xl:aspect-w-7"
             >
               <img
+                loading="lazy"
                 :src="getImagePath(product.colors[0].imageSrc)"
                 :alt="product.colors[0].imageAlt"
                 class="h-full w-full object-cover object-center group-hover:opacity-75"

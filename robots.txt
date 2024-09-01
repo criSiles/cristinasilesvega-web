@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://cristinasilesvega.com/sitemap.xml

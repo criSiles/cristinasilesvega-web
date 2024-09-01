@@ -1,16 +1,16 @@
 <template>
   <section class="contact">
     <form class="contact-form" @submit="handleSubmit($event)">
-      <label class="contact-label">Email:</label>
+      <label for="email" class="contact-label">Email:</label>
       <input
       class="contact-input-select"
-      type="email"
+      type="text"
       required
       v-model.trim="email"
       placeholder="phoebe@gmail.com"
       />
       <div v-if="emailError">Please enter a valid email</div>
-      <label class="contact-label">Name:</label>
+      <label for="name" class="contact-label">Name:</label>
       <input
       class="contact-input-select"
       type="text"
@@ -20,7 +20,7 @@
       />
       <div v-if="nameError">Please enter your name</div>
       
-      <label class="contact-label">Mobile:</label>
+      <label for="mobile" class="contact-label">Mobile:</label>
       <input
       class="contact-input-select"
       type="tel"
@@ -30,7 +30,7 @@
       />
       <div v-if="mobileError">The mobile has to be 9 numbers</div>
       
-      <label class="contact-label"> Role: </label>
+      <label for="role" class="contact-label"> Role: </label>
       <select class="contact-input-select" required v-model="role">
         <option type="role" value="developer">Web Developer</option>
         <option type="role" value="recruiter">Recruiter</option>
